@@ -114,22 +114,20 @@ fi
 
 
 ##########################################
-if [ -f ~korben/.bashrc_modules ]; then
-    . ~korben/.bashrc_modules
+if [ -f ~korben/myLinuxEnv/bash/bashrc_modules ]; then
+    . ~korben/myLinuxEnv/bash/bashrc_modules
 fi
 
-if [ -f ~korben/.bashrc_aliases ]; then
-    . ~korben/.bashrc_aliases
+if [ -f ~korben/myLinuxEnv/bash/bashrc_aliases ]; then
+    . ~korben/myLinuxEnv/bash/bashrc_aliases
 fi
 
 ########### git ##########################
-if [ -f ~korben/git-completion.bash ]; then
-    . ~korben/.git-completion.bash
+if [ -f ~korben/myLinuxEnv/git/git-completion.bash ]; then
+    . ~korben/myLinuxEnv/git/git-completion.bash
 fi
 
 ###  powerline
 export TERM="screen-256color"
 
 export MAKEFLAGS="$MAKEFLAGS -j4" # Assuming you have N cores on your host system
-
-

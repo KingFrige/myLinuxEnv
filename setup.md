@@ -9,5 +9,10 @@ clone repo
 ```
 cd myLinuxEnv
 
-ln -s bash/bashrc ~/.bashrc
+# bash
+## update user-name
+ln -s ~/myLinuxEnv/bash/bashrc ~/.bashrc
+
+# git
+ln -s ~/myLinuxEnv/git/git-config ~/.gitconfig
 ```
