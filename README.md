@@ -32,7 +32,10 @@
 * [wps](https://linux.wps.cn) 
 
 
-## [texlive](tug.org/texlive/)
+## manual edit language/tool
+* [texlive](tug.org/texlive/)
+* [Sphinx](https://www.sphinx.org.cn)
+* [ReadtheDocs](https://docutils-zh-cn.readthedocs.io/zh_CN/latest/user/rst/demo.html#)
 
 
 ## 安装Scala/Chisel开发环境
