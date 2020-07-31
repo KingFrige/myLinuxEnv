@@ -1,0 +1,10 @@
+#%Module1.0######################################################################
+
+# conflict        java/
+
+set             tool_home       /opt/java/apache-maven-3.6.3
+setenv          MAVEN_HOME      $tool_home
+
+append-path     PATH            $tool_home/bin
+append-path     LIBRARY_PATH    $tool_home/lib
+append-path     LD_LIBRARY_PATH $tool_home/lib

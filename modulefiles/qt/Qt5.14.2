@@ -1,0 +1,10 @@
+#%Module1.0######################################################################
+
+# conflict       qt/
+
+set              tool_home       /opt/Qt/Qt5.14.2/5.14.2/gcc_64
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_INCLUDE_PATH $tool_home/include

@@ -1,0 +1,10 @@
+#%Module1.0######################################################################
+
+conflict        scala/scala-2.11.12
+
+set             tool_home         /opt/scala/scala-2.13.3
+
+append-path     PATH              $tool_home/bin
+append-path     LIBRARY_PATH      $tool_home/lib
+append-path     LD_LIBRARY_PATH   $tool_home/lib
+append-path     MANPATH           $tool_home/man

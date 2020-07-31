@@ -1,0 +1,8 @@
+#%Module1.0######################################################################
+
+# conflict        tmux
+
+set              tool_home       /opt/tmux
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     MANPATH         $tool_home/share/man

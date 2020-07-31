@@ -1,0 +1,15 @@
+#%Module1.0######################################################################
+
+conflict        java/jdk-11.0.7+10
+conflict        java/jdk1.8.0_261
+
+set             tool_home       /opt/java/jdk-14.0.1
+setenv          JAVA_HOME       $tool_home
+setenv          JAVA_BIN        $tool_home/bin
+setenv          JAVA_LIB        $tool_home/lib
+
+append-path     PATH            $tool_home/bin
+append-path     LIBRARY_PATH    $tool_home/lib
+append-path     LD_LIBRARY_PATH $tool_home/lib
+append-path     LD_INCLUDE_PATH $tool_home/include
+append-path     MANPATH         $tool_home/man

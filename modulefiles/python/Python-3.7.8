@@ -1,0 +1,10 @@
+#%Module1.0######################################################################
+conflict         python/Python-3.8.3
+
+set              tool_home       /opt/python/Python-3.7.8
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     MANPATH         $tool_home/share/man

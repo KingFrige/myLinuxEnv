@@ -1,0 +1,13 @@
+#%Module1.0######################################################################
+
+conflict         gcc/gcc-9.2.0
+
+set              tool_home       /opt/gcc/gcc-8.2.0
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib64
+prepend-path     LD_LIBRARY_PATH $tool_home/lib64
+prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     MANPATH         $tool_home/share/man

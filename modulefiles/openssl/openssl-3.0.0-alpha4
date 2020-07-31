@@ -1,0 +1,11 @@
+#%Module1.0######################################################################
+
+conflict         openssl/openssl-1.1.1g
+
+set              tool_home       /opt/openssl/openssl-3.0.0-alpha4
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     MANPATH         $tool_home/share/man
