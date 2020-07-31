@@ -59,7 +59,7 @@
 ## 开源EDA环境
 * iverilog
 * gtkwave
-* ysos
+* yosys
 * verilg-Perl
 * verilator
 * OpenROAD
