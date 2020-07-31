@@ -1,15 +1,38 @@
+# my Debian/Linux env
+
+## quickly start
+* [install basic software](https://www.cnblogs.com/OneFri/p/8308340.html)
+* [modules use](https://www.cnblogs.com/OneFri/p/11723628.html)
+* [beautify desktop of debian/Linux](https://www.cnblogs.com/OneFri/p/6104037.html)
+* [.tmux](https://github.com/gpakosz/.tmux)
+
+
+## vim config
+
+
 ## bash config
 * apt install bash-completion
 * [bash-it](https://github.com/Bash-it/bash-it)
 
-## vim config
 
-## tmux config
-* [.tmux](https://github.com/gpakosz/.tmux)
+## git config
+* bash自动补全
+* 分支提示
+* ssh上传gitee/github
+* gitlab
+* gitlab-CI 环境
 
-## [安装modules](https://www.cnblogs.com/OneFri/p/11723628.html)
 
 ## [Qt安装](http://download.qt.io/archive/qt/)
+
+## office software
+* zoom
+* slack
+* wps 
+
+
+## texlive
+
 
 ## 安装Scala/Chisel开发环境
 * jdk
@@ -19,49 +42,15 @@
 * sbt
 * mill
 
-## git config
-* bash自动补全
-* 分支提示
-* ssh上传gitee/github
-* gitlab
-* gitlab-CI 环境
 
 ## riscv工具链
 * toolchain
 
-## c compiler tool
-* gcc
-* llvm
-
-## IDE环境
-* freedomStudio
-* vscode
-* elipse
-
-## office software
-* zoom
-* slack
-* wps 
-
-## python
-* python2.7
-* python3.7
-
-## texlive
-
-## rust
-
-## node
-
-## golang
 
 ## wake/wit
 * wake
 * wit
 
-## vpn tool
-* openvpn
-* etxlauncher
 
 ## 开源EDA环境
 * iverilog
@@ -71,9 +60,44 @@
 * verilator
 * OpenROAD
 
+
+## IDE环境
+* freedomStudio
+* vscode
+* elipse
+* Idea
+
+
+## python
+* python2.7
+* python3.7
+
+
+## c compiler tool
+* gcc
+* llvm
+
+## rust
+
+
+## node
+* nodejs
+* gulp
+* npm
+
+
+## golang
+
+
+## vpn tool
+* openvpn
+* etxlauncher
+
+
 ## virtual platform
 * virtualbox
 * qemu/kvm
+
 
 ## other
 * blender
