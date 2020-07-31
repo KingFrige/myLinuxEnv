@@ -1,0 +1,51 @@
+alias  c="cd .."
+alias  cc='cd ~'
+
+alias ls='ls -h --color'
+alias lx='ls -lXB'
+alias lk='ls -lSr'
+alias lt='ls -ltr'
+alias lc='ls -ltcr'
+alias lu='ls -ltur'
+alias ll="ls -lvrt"
+alias lm='ll |more'
+alias lr='ls -R'
+alias la='ll -A'
+
+# cdls() {  
+#     cd "${1}"; ll;  
+# }  
+# alias cd='cdls'  
+
+alias grep='grep --color'  
+
+alias gg='gvim -O *c'
+alias gh='gvim ../hdl/user.v'
+alias gl='gvim -O *.log'
+alias ga='gvim -O *'
+alias gvim='vim'
+
+alias pp='pwd'
+
+alias h='history'
+alias j='jobs -l'
+alias which='type -a'
+
+alias df='df -h'
+alias du='du -h'
+
+alias vd='verdi -f file.f -ssf verilog.fsdb &'
+
+alias gitk='/home/dongguangda/gitk'
+
+# 日历
+alias Rainlendar2='/opt/rainlendar2/rainlendar2'
+# 视频处理工具
+alias blender='/opt/blender-2.79b-linux-glibc219-x86_64/blender'
+
+alias libreoffice='libreoffice6.0'
+
+
+
+# SiFive ssh chisel
+alias sshU5='ssh korben.dong@ubuntu1.cn.sifive.com -p 10024'

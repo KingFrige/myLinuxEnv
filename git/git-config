@@ -1,0 +1,23 @@
+[user]
+	email = korben.dong@sifive.com
+	name = korben.dong
+[core]
+	editor = vim
+	quotepath = false
+[merge]
+	tool = vimdiff
+[alias]
+st = status -sb
+stt = status -sb
+co = checkout
+br = branch
+mg = merge
+ci = commit
+ds = diff --staged
+dt = difftool
+mt = mergetool
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[credential]
+	helper = cache --timeout=36000
+[http]
+	postBuffer = 524288000

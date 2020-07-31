@@ -1,0 +1,10 @@
+
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936
+set fileencoding=gb2312
+set termencoding=utf-8
+
+set lines=32 columns=112
+"set guifont=Bitstream\ Vera\ Sans\ Mono\ 15 
+set guifont=Courier\ New\ 15
+
