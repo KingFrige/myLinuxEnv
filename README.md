@@ -11,7 +11,7 @@
 
 
 ## bash config
-* apt install bash-completion
+* `apt install bash-completion`
 * [bash-it](https://github.com/Bash-it/bash-it)
 
 
@@ -25,13 +25,14 @@
 
 ## [Qt安装](http://download.qt.io/archive/qt/)
 
+
 ## office software
 * zoom
 * slack
-* wps 
+* [wps](https://linux.wps.cn) 
 
 
-## texlive
+## [texlive](tug.org/texlive/)
 
 
 ## 安装Scala/Chisel开发环境
@@ -65,7 +66,6 @@
 * freedomStudio
 * vscode
 * elipse
-* Idea
 
 
 ## python
@@ -74,16 +74,16 @@
 
 
 ## c compiler tool
-* gcc
+* [gcc](https://gcc.gnu.org/wiki/InstallingGCC)
 * llvm
 
 ## rust
 
 
 ## node
-* nodejs
-* gulp
+* [nodejs](nodejs.cn)
 * npm
+* [gulp](https://www.gulpjs.com.cn)
 
 
 ## golang
