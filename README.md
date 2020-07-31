@@ -1,6 +1,6 @@
 # my Debian/Linux env
 
-## quickly start
+## quick start
 * [install basic software](https://www.cnblogs.com/OneFri/p/8308340.html)
 * [modules use](https://www.cnblogs.com/OneFri/p/11723628.html)
 * [beautify desktop of debian/Linux](https://www.cnblogs.com/OneFri/p/6104037.html)
