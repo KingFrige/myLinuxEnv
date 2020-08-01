@@ -1,9 +1,5 @@
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
-# Scripts
-export PATH="$PATH:/home/korben/scripts/perl"
-export PATH="$PATH:/home/korben/scripts/shell"
-
 # module
 export MODULEPATH=/home/korben/myLinuxEnv/modulefiles:$MODULEPATH
 source /usr/local/Modules/init/profile.sh
