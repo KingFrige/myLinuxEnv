@@ -1,21 +1,12 @@
 #%Module1.0######################################################################
-##
-## riscv-toolchain modulefile
-##
-proc ModulesHelp { } {
-    puts stderr "\tThe riscv-toolchain compile version Module\n"
-    puts stderr "\tThis module adds the current working directory to your path."
-}
-
-module-whatis   "adds  /opt/riscv/toolchain/bin to your PATH environment variable"
 
 conflict        riscv_toolchain/freedomstudio-version
 
-set             tool_home       /opt/riscv/toolchain
-setenv          RISCV           $tool_home
+set             tool_home        /opt/riscv/toolchain
+setenv          RISCV            $tool_home
 
-append-path     PATH            $tool_home/bin
-append-path     LIBRARY_PATH    $tool_home/lib
-append-path     LD_LIBRARY_PATH $tool_home/lib
-append-path     LD_INCLUDE_PATH $tool_home/include
-append-path     MANPATH         $tool_home/share/man
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    MANPATH          $tool_home/share/man

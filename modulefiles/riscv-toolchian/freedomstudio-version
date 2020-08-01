@@ -1,28 +1,18 @@
 #%Module1.0######################################################################
-##
-## riscv-toolchain modulefile
-##
-proc ModulesHelp { } {
-    puts stderr "\tThe riscv-toolchain compile version Module\n"
-    puts stderr "\tThis module adds the current working directory to your path."
-}
 
-module-whatis   "adds  freedomstudio dir to your PATH environment variable"
+conflict         riscv_toolchain/compile-verison
 
-conflict        riscv_toolchain/freedomstudio-version
+set              tool_home           /mnt/Software/FreedomStudio/SiFive/riscv64-unknown-elf-gcc/riscv64-unknown-elf-gcc-8.2.0-2019.05.3
+set              riscv_openocd_path  /mnt/Software/FreedomStudio/SiFive/riscv-openocd/riscv-openocd-0.10.0-2019.05.1
 
+setenv           RISCV           $tool_home
+setenv           RISCV_PATH      $tool_home
+setenv           RISCV_OPENOCD_PATH  $riscv_openocd_path
 
-set             tool_home           /mnt/Software/FreedomStudio/SiFive/riscv64-unknown-elf-gcc/riscv64-unknown-elf-gcc-8.2.0-2019.05.3
-set             riscv_openocd_path  /mnt/Software/FreedomStudio/SiFive/riscv-openocd/riscv-openocd-0.10.0-2019.05.1
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     MANPATH         $tool_home/share/man
 
-setenv          RISCV           $tool_home
-setenv          RISCV_PATH      $tool_home
-setenv          RISCV_OPENOCD_PATH  $riscv_openocd_path
-
-append-path     PATH            $tool_home/bin
-append-path     LIBRARY_PATH    $tool_home/lib
-append-path     LD_LIBRARY_PATH $tool_home/lib
-append-path     LD_INCLUDE_PATH $tool_home/include
-append-path     MANPATH         $tool_home/share/man
-
-append-path     PATH            $riscv_openocd_path/bin
+prepend-path     PATH            $riscv_openocd_path/bin
