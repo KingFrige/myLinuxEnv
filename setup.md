@@ -23,7 +23,7 @@ sed "s/korben/`whoami`/g" `grep korben -rl bash`
 ln -s ~/myLinuxEnv/bash/bashrc ~/.bashrc
 
 # git
-## update info
+## NOTE: update info
 ln -s ~/myLinuxEnv/git/git-config ~/.gitconfig
 ```
 
