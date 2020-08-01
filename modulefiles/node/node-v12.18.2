@@ -2,10 +2,10 @@
 
 # conflict      node/
 
-set             tool_home         /opt/node/node-v12.18.2-linux-x64
+set              tool_home         /opt/node/node-v12.18.2-linux-x64
 
-append-path     PATH              $tool_home/bin
-append-path     LIBRARY_PATH      $tool_home/lib
-append-path     LD_LIBRARY_PATH   $tool_home/lib
-append-path     LD_INCLUDE_PATH   $tool_home/include
-append-path     MANPATH           $tool_home/share/man
+prepend-path     PATH              $tool_home/bin
+prepend-path     LIBRARY_PATH      $tool_home/lib
+prepend-path     LD_LIBRARY_PATH   $tool_home/lib
+prepend-path     LD_INCLUDE_PATH   $tool_home/include
+prepend-path     MANPATH           $tool_home/share/man

@@ -1,7 +1,7 @@
 #%Module1.0######################################################################
 
-# conflict      runst/
+# conflict      rust/
 
-set             tool_home        /home/korben/.cargo
+set              tool_home        /home/korben/.cargo 
 
-append-path     PATH             $tool_home/bin
+prepend-path     PATH             $tool_home/bin
