@@ -10,29 +10,11 @@ module load qt/Qt5.14.2
 # openssl
 module load openssl/openssl-1.1.1g
 
-# tmux
-export PATH=/opt/tmux/bin:$PATH
-   
-# IDEA
-alias IdeaIC='/opt/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh &'
-alias IdeaIU='/opt/JetBrains/idea/idea-IU-201.8538.31/bin/idea.sh &'
-
 # Python
 module load python/Python-3.7.8
 
-# Pycharm
-alias Pycharm='/opt/JetBrains/pycharm/pycharm-community-2020.1.2/bin/pycharm.sh &'
-
-# Xilinx
-source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
-
 # Golang
 module load go/go1.14.4
-
-
-# #duh
-# export PATH=/home/korben/node_modules/.bin:$PATH
-# alias  here_node="export PATH=./node_modules/.bin:$PATH"
 
 # riscv toolchian 
 module load riscv-toolchian/compile-verison 
@@ -43,3 +25,20 @@ module load java/apache-maven-3.6.3
 # scala/sbt
 module load sbt/sbt-1.3.10
 module load scala/scala-2.11.12
+
+# IDEA
+alias IdeaIC='/opt/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh &'
+alias IdeaIU='/opt/JetBrains/idea/idea-IU-201.8538.31/bin/idea.sh &'
+# Pycharm
+alias Pycharm='/opt/JetBrains/pycharm/pycharm-community-2020.1.2/bin/pycharm.sh &'
+
+# Xilinx
+source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
+
+# tmux
+export PATH=/opt/tmux/bin:$PATH
+
+# #duh
+# export PATH=/home/korben/node_modules/.bin:$PATH
+# alias  here_node="export PATH=./node_modules/.bin:$PATH"
+
