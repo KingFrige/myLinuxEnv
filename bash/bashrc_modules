@@ -35,9 +35,6 @@ alias Pycharm='/opt/JetBrains/pycharm/pycharm-community-2020.1.2/bin/pycharm.sh 
 # Xilinx
 source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
 
-# tmux
-export PATH=/opt/tmux/bin:$PATH
-
 # #duh
 # export PATH=/home/korben/node_modules/.bin:$PATH
 # alias  here_node="export PATH=./node_modules/.bin:$PATH"
