@@ -109,20 +109,20 @@ fi
 
 ##########################################
 if [ -f ~korben/.bashrc_local ]; then
-    . ~korben/.bashrc_local
+    source ~korben/.bashrc_local
 fi
 
 if [ -f ~korben/myLinuxEnv/bash/bashrc_modules ]; then
-    . ~korben/myLinuxEnv/bash/bashrc_modules
+    source ~korben/myLinuxEnv/bash/bashrc_modules
 fi
 
 if [ -f ~korben/myLinuxEnv/bash/bashrc_aliases ]; then
-    . ~korben/myLinuxEnv/bash/bashrc_aliases
+    source ~korben/myLinuxEnv/bash/bashrc_aliases
 fi
 
 ########### git ##########################
 if [ -f ~korben/myLinuxEnv/git/git-completion.bash ]; then
-    . ~korben/myLinuxEnv/git/git-completion.bash
+    source ~korben/myLinuxEnv/git/git-completion.bash
 fi
 
 ###  powerline
