@@ -1,6 +1,7 @@
 #%Module1.0######################################################################
 
 conflict         gcc/gcc-9.2.0
+conflict         gcc/gcc-7.5.0
 
 set              tool_home       /opt/gcc/gcc-8.2.0
 
