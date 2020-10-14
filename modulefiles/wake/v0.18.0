@@ -2,7 +2,7 @@
 
 # conflict        wake/v0.17.0
 
-set              tool_home         /opt/wake/wake_0.18.0v
+set              tool_home         /opt/wake/v0.18.0
 
 prepend-path     PATH              $tool_home/bin
 prepend-path     LIBRARY_PATH      $tool_home/lib
