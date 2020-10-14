@@ -28,9 +28,6 @@ module load qt/Qt5.14.2
 # openssl
 module load openssl/openssl-1.1.1g
 
-# Python
-module load python/Python-3.7.8
-
 # Golang
 module load go/go1.14.4
 
