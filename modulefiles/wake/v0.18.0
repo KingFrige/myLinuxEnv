@@ -1,6 +1,6 @@
 #%Module1.0######################################################################
 
-# conflict        wake/v0.17.0
+conflict        wake/v0.17.2
 
 set              tool_home         /opt/wake/v0.18.0
 
