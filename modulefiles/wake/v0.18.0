@@ -2,6 +2,8 @@
 
 conflict        wake/v0.18.2
 
+module load protobuf/v3.6.0
+
 set              tool_home         /opt/wake/v0.18.0
 
 prepend-path     PATH              $tool_home/bin
