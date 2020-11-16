@@ -14,14 +14,14 @@ runtime! debian.vim
 " options, so any other options should be set AFTER setting 'compatible'.
 "set compatible
 
-set background=dark
+" set background=dark
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
 syntax on
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
@@ -39,9 +39,7 @@ syntax on
 " differently from regular Vi. They are highly recommended though.
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
-"set ignorecase		" Do case insensitive matching
-"set smartcase		" Do smart case matching
-"set incsearch		" Incremental search
+set smartcase		" Do smart case matching
 set autowrite		" Automatically save before commands like :next and :make
 "set hidden		" Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
@@ -128,9 +126,9 @@ syntax on
 
 
 "配色方案
-"colorscheme solarized
+" colorscheme solarized
 colorscheme molokai
-"colorscheme peachpuff
+" colorscheme peachpuff
 
 " 设置状态栏主题风格
 "let g:Powerline_colorscheme='solarized256'
@@ -142,7 +140,7 @@ filetype indent on
 " 将制表符扩展为空格
 set expandtab
 " 设置编辑时制表符占用空格数
-set tabstop=2
+" set tabstop=2
 " 设置格式化时制表符占用空格数
 set shiftwidth=2
 " 让 vim 把连续数量的空格视为一个制表符
@@ -166,78 +164,6 @@ let mapleader=";"
 set helplang=cn                             " 中文帮助
 
 
-"####################  Vundle 插件 #######################################
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-
-set nocompatible              " required
-filetype off                  " required
-
-"set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=~/.vim/bundle/vundle/
-
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'gmarik/vundle'
-" The following are examples of different formats supported.
-
-" Keep Plugin commands between here and filetype plugin indent on.
-" scripts on GitHub repos
-" Plugin 'tpope/vim-fugitive'
-" Plugin 'Lokaltog/vim-easymotion'
-" Plugin 'tpope/vim-rails.git'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" scripts from http://vim-scripts.org/vim/scripts.html
-
-" "MarkDown
-" Plugin 'godlygeek/tabular'
-" Plugin 'plasticboy/vim-markdown'
-" Plugin 'suan/vim-instant-markdown'
-
-" YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-
-" 代码折叠
-" Plugin 'tmhedberg/SimpylFold'
-
-" 括号/引号匹配
-" Plugin 'Raimondi/delimitMate'
-
-" 状态栏
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-
-call vundle#end()            " required
-
-" To ignore plugin indent changes, instead use:
-filetype plugin indent on    " required
-
-"####################  Vundle 插件 #######################################
-
-"####################  YouCompleteMe 插件 ################################
-let g:ycm_server_python_interpreter='/usr/bin/python'
-let g:ycm_global_ycm_extra_conf='~clough/.vim/.ycm_extra_conf.py'
-"####################  YouCompleteMe 插件 ################################
-
-"####################  状态栏 powerline ################################
-set guifont=Inconsolata-dz\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set term=xterm-256color
-set termencoding=utf-8
-set fillchars+=stl:\ ,stlnc:\
-set laststatus=2
-"####################  状态栏 powerline ################################
-
-
-
 "####################  tags  插件 #######################################
 "ctags使用配置
 "按 Ctrl-F12 即可自动生成 C++ 项目的 tags 文件
@@ -259,7 +185,7 @@ let Tlist_GainFocus_On_ToggleOpen = 1        "打开taglist时，光标保留在taglist窗
 " let Tlist_Close_On_Select = 0               "如果想在选择了tag后自动关闭taglist窗口，该参数设置为1
 nnoremap <silent> <F9> :TlistToggle<CR><CR>  
                     "设置关闭和打开taglist窗口的快捷键
-noremap <F4> :!ctags -R<CR>
+noremap <F7> :!ctags -R<CR>
                     "更新ctags标签文件快捷键设置
 "}
 "####################  tags  插件 #######################################
@@ -280,6 +206,7 @@ noremap <F4> :!ctags -R<CR>
 :ab Main #include "all.h"<Enter>void main()<Enter>{<Enter>}
 "###################    C code end   ##########################
 
+
 "###################    set file head start  #########################
 autocmd BufNewFile *.v,*.sv,*.cpp,*.c,*.h exec ":call Setfilehead()"
 func Setfilehead()
@@ -297,9 +224,9 @@ func Setfilehead()
 "    call append(11, '')
 endfunc
 
-"map F2 to creat file head comment
 map <F3> :call Setfilehead()<CR>:11<CR>o
 "###################    set file head end   ##########################
+
 
 "###################    set stress comment start  #########################
 func SetComment()
@@ -307,7 +234,7 @@ func SetComment()
     call append(line(".")+1, '//******************************************************')
 endfunc
 
-map <F6> :call SetComment()<CR>j<CR>O
+map <F4> :call SetComment()<CR>j<CR>O
 "###################    set stress comment end   ##########################
 
 
@@ -322,5 +249,9 @@ func SetMain()
     call append(line(".")+6, '}')
 endfunc
 
-map <F7> :call SetMain()<CR>4j<CR>O
+
+map <F6> :call SetMain()<CR>4j<CR>O
 "###################    set main end   ##########################
+
+
+map <F8> :%!python3 -m json.tool<CR>
