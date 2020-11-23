@@ -1,6 +1,7 @@
 #%Module -*- tcl -*-
 
 conflict         riscv_toolchain/compile-verison
+conflict         riscv_toolchain/rvv-0.9.x
 
 set              tool_home           /mnt/Software/FreedomStudio/SiFive/riscv64-unknown-elf-gcc/riscv64-unknown-elf-gcc-8.2.0-2019.05.3
 set              riscv_openocd_path  /mnt/Software/FreedomStudio/SiFive/riscv-openocd/riscv-openocd-0.10.0-2019.05.1
