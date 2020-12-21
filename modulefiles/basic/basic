@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
 
-set             tool_home        $::env(HOME)/.local/bin
+set             tool_home        $::env(HOME)/.local
 
 prepend-path    PATH             $tool_home/bin
