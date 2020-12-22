@@ -1,14 +1,5 @@
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
-# IDEA
-alias IdeaIC='/opt/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh &'
-alias IdeaIU='/opt/JetBrains/idea/idea-IU-201.8538.31/bin/idea.sh &'
-# Pycharm
-alias Pycharm='/opt/JetBrains/pycharm/pycharm-community-2020.1.2/bin/pycharm.sh &'
-
-# Xilinx
-# source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
-
 # module
 export MODULEPATH=/home/korben/myLinuxEnv/modulefiles:$MODULEPATH
 source /usr/local/Modules/init/profile.sh
