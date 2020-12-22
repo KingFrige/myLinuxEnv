@@ -1,7 +1,5 @@
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
-
-
 # IDEA
 alias IdeaIC='/opt/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh &'
 alias IdeaIU='/opt/JetBrains/idea/idea-IU-201.8538.31/bin/idea.sh &'
@@ -9,34 +7,8 @@ alias IdeaIU='/opt/JetBrains/idea/idea-IU-201.8538.31/bin/idea.sh &'
 alias Pycharm='/opt/JetBrains/pycharm/pycharm-community-2020.1.2/bin/pycharm.sh &'
 
 # Xilinx
-source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
-
-# #duh
-# export PATH=/home/korben/node_modules/.bin:$PATH
-# alias  here_node="export PATH=./node_modules/.bin:$PATH"
-
-
-
+# source /mnt/Software/Xilinx/Vivado/2018.2/settings64.sh
 
 # module
 export MODULEPATH=/home/korben/myLinuxEnv/modulefiles:$MODULEPATH
 source /usr/local/Modules/init/profile.sh
-
-# Qt5
-module load qt/Qt5.14.2
-
-# openssl
-module load openssl/openssl-1.1.1g
-
-# Golang
-module load go/go1.14.4
-
-# riscv toolchian 
-module load riscv-toolchian/compile-verison 
-
-# mvn
-module load java/apache-maven-3.6.3
-
-# scala/sbt
-module load sbt/sbt-1.3.10
-module load scala/scala-2.11.12

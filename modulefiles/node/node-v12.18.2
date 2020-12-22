@@ -3,9 +3,12 @@
 # conflict      node/
 
 set              tool_home         /opt/node/node-v12.18.2-linux-x64
+set              user_node_module_home     $::env(HOME)/node_modules
 
 prepend-path     PATH              $tool_home/bin
 prepend-path     LIBRARY_PATH      $tool_home/lib
 prepend-path     LD_LIBRARY_PATH   $tool_home/lib
 prepend-path     LD_INCLUDE_PATH   $tool_home/include
 prepend-path     MANPATH           $tool_home/share/man
+
+prepend-path     PATH              $user_node_module_home/.bin
