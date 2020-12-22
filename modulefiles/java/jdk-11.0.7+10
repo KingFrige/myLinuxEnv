@@ -2,6 +2,7 @@
 
 conflict         java/jdk-14.0.1 
 conflict         java/jdk1.8.0_261
+conflict         java/jdk1.8.0_271
 
 set              tool_home       /opt/java/jdk-11.0.7+10
 setenv           JAVA_HOME       $tool_home
