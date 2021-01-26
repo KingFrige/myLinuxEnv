@@ -2,9 +2,16 @@
 
 # conflict       qt/
 
-set              tool_home       /opt/Qt/Qt5.14.2/5.14.2/gcc_64
+set              gcc_home        /opt/Qt/Qt5.14.2/5.14.2/gcc_64
+set              qt_home         /opt/Qt/Qt5.14.2/Tools/QtCreator
 
-prepend-path     PATH            $tool_home/bin
-prepend-path     LIBRARY_PATH    $tool_home/lib
-prepend-path     LD_LIBRARY_PATH $tool_home/lib
-prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     PATH            $gcc_home/bin
+prepend-path     LIBRARY_PATH    $gcc_home/lib
+prepend-path     LD_LIBRARY_PATH $gcc_home/lib
+prepend-path     LD_INCLUDE_PATH $gcc_home/include
+prepend-path     PATH            $qt_home/bin
+prepend-path     LIBRARY_PATH    $qt_home/lib
+prepend-path     LD_LIBRARY_PATH $qt_home/lib
+prepend-path     LD_INCLUDE_PATH $qt_home/include
+
+setenv           QTDIR           $qt_home
