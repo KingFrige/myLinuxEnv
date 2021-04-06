@@ -3,9 +3,9 @@
 conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/compile-version
 conflict        riscv_toolchain/sifive-toolchain
-conflict        riscv_toolchain/chipyard
+conflict        riscv_toolchain/rvv-0.9.x
 
-set             tool_home        /opt/riscv/rvv-0.9.x
+set             tool_home        /opt/riscv/chipyard
 setenv          RISCV            $tool_home
 setenv          RISCV_PATH       $tool_home
 

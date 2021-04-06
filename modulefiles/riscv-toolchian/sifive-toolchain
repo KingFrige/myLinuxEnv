@@ -3,6 +3,7 @@
 conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/compile-version
 conflict        riscv_toolchain/rvv-0.9.x
+conflict        riscv_toolchain/chipyard
 
 set             tool_home           /opt/riscv/sifive/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86_64-linux-ubuntu14
 set             riscv_openocd_path  /opt/riscv/sifive/riscv-openocd-0.10.0-2020.04.6-x86_64-linux-ubuntu14
