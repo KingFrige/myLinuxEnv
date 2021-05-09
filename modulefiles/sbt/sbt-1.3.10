@@ -2,6 +2,7 @@
 
 conflict        sbt/sbt-1.2.8
 conflict        sbt/sbt-1.3.4
+conflict        sbt/sbt-1.4.4
 
 set              tool_home         /opt/scala/sbt-1.3.10
 
