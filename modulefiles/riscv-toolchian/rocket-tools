@@ -1,8 +1,8 @@
 #%Module -*- tcl -*-
 
 conflict        riscv_toolchain/freedomstudio-version
-conflict        riscv_toolchain/rvv-0.9.x
-conflict        riscv_toolchain/sifive-toolchain
+conflict        riscv_toolchain/gcc-master
+conflict        riscv_toolchain/chipyard
 
 set             tool_home        /opt/riscv/rocket-tools
 setenv          RISCV            $tool_home
