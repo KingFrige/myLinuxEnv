@@ -1,7 +1,7 @@
 #%Module -*- tcl -*-
 
 conflict        riscv_toolchain/freedomstudio-version
-conflict        riscv_toolchain/compile-version
+conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/sifive-toolchain
 conflict        riscv_toolchain/chipyard
 
