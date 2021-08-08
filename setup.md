@@ -31,6 +31,8 @@ update modules
 ---------------
 
 ```
+grep -lr "\/opt" | xargs sed 's/\/opt/\/home\/korben\/tools/' -i
+
 modulefiles/
 ├── eda
 ├── gcc

@@ -4,7 +4,7 @@ conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/gcc-master
 
-set             tool_home        /opt/riscv/chipyard
+set             tool_home        /home/korben/tools/riscv/chipyard
 setenv          RISCV            $tool_home
 setenv          RISCV_PATH       $tool_home
 

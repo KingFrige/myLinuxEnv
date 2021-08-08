@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set              tool_home         /opt/protobuf/protobuf-3.6.0
+set              tool_home         /home/korben/tools/protobuf/protobuf-3.6.0
 
 prepend-path     PATH              $tool_home/bin
 prepend-path     LD_INCLUDE_PATH   $tool_home/include

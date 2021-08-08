@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /opt/riscv/sifive/trace-decoder
+set             tool_home        /home/korben/tools/riscv/sifive/trace-decoder
 setenv          DQRPATH          $tool_home
 
 prepend-path    PATH             $tool_home/bin

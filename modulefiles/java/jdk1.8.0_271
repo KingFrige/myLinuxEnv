@@ -4,7 +4,7 @@ conflict         java/jdk1.8.0_261
 conflict         java/jdk-14.0.1 
 conflict         java/jdk-11.0.7+10
 
-set              tool_home       /opt/java/jdk1.8.0_271
+set              tool_home       /home/korben/tools/java/jdk1.8.0_271
 setenv           JAVA_HOME       $tool_home
 setenv           JAVA_BIN        $tool_home/bin
 setenv           JAVA_LIB        $tool_home/lib
