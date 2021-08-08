@@ -2,7 +2,7 @@
 
 conflict         openssl/openssl-3.0.0-alpha4
 
-set              tool_home       /home/korben/tools/openssl/openssl-1.1.1g
+set              tool_home       /home/korben/tools/openssl/openssl-1.1.1k
 
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib

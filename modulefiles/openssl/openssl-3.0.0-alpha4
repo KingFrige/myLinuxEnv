@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-conflict         openssl/openssl-1.1.1g
+conflict         openssl/openssl-1.1.1k
 
 set              tool_home       /home/korben/tools/openssl/openssl-3.0.0-alpha4
 
