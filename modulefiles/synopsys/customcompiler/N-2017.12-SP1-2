@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /mnt/Software/EDA/Synopsys/customcompiler/N-2017.12-SP1-2
+
+prepend-path    PATH             $tool_home/bin

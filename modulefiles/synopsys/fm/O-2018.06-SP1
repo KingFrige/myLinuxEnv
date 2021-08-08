@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /mnt/Software/EDA/Synopsys/fm/O-2018.06-SP1
+
+prepend-path    PATH             $tool_home/bin

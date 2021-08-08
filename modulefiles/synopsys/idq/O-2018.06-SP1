@@ -1,0 +1,6 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /mnt/Software/EDA/Synopsys/idq/O-2018.06-SP1
+
+set             tool_linux64     $tool_home/linux64/iddq
+prepend-path    PATH             $tool_home/bin

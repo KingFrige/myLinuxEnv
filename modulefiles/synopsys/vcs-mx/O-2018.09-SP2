@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /mnt/Software/EDA/Synopsys/vcs-mx/O-2018.09-SP2
+
+prepend-path    PATH             $tool_home/bin
