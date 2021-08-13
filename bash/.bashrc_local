@@ -1,0 +1,5 @@
+alias IdeaIC="/mnt/DownLoad/tools/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh"
+
+alias fff='/mnt/DownLoad/tools/firefox/firefox &'
+
+alias setSnopsysLicense='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l synopsys-debug.log'

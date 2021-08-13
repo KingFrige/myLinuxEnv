@@ -3,3 +3,7 @@
 set             tool_home        /mnt/Software/EDA/Synopsys/verdi/Verdi_O-2018.09-SP2
 
 prepend-path    PATH             $tool_home/bin
+prepend-path    PATH             $tool_home/linux64/bin
+
+
+setenv LM_LICENSE_FILE   27000@clough

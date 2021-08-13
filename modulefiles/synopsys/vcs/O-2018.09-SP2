@@ -2,4 +2,15 @@
 
 set             tool_home        /mnt/Software/EDA/Synopsys/vcs/O-2018.09-SP2
 
+setenv  SYNOPSYS                 $tool_home
+setenv  VCS_HOME                 $tool_home
+
 prepend-path    PATH             $tool_home/bin
+prepend-path    PATH             $tool_home/linux64/bin
+
+
+setenv LM_LICENSE_FILE   27000@clough
+
+setenv VCS_ARCH_OVERRIDE linux
+setenv VCS_TARGET_ARCH   linux64
+
