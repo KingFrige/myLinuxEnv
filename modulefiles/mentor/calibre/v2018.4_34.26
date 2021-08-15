@@ -1,8 +1,17 @@
 #%Module -*- tcl -*-
 
 set             tool_home        /mnt/Software/EDA/Mentor/calibre2018/aoi_cal_2018.4_34.26
+setenv          CALIBRE_HOME     $tool_home
+setenv          MGC_LIB_PATH     $tool_home/lib
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/share/include
+
+
+setenv MGLS_LICENSE_FILE                  /mnt/Software/EDA/license/mentor/license.dat
+setenv CALIBRE_OS_MSG_LEVEL               1
+setenv MGC_CALIBRE_SAVE_ALL_RUNSET_VALUES 1
+setenv MGC_PDF_READER                     evince
+
