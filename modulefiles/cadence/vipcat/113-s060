@@ -7,6 +7,16 @@ prepend-path    PATH             $tool_home/bin
 set             tools_lnx86      $tool_home/tools.lnx86
 
 prepend-path    PATH             $tools_lnx86/bin
+prepend-path    LIBRARY_PATH     $tools_lnx86/lib/64bit
+prepend-path    LD_LIBRARY_PATH  $tools_lnx86/lib/64bit
+
+
+setenv CDS_AUTO_64BIT         "ALL"
+setenv CDN_VIP_ROOT           $tool_home
+setenv CADENCE_VIP_LIC_ORDER  newrev:soc:portfolio:alacarte
+setenv ABVIP_ISNT_DIR         $tool_home/tools/abvip
+setenv SPECMAN_PATH           $tool_home/utils:$tool_home/packages:$tool_home/vips/enet/vr_enet:$::env(PATH)
+setenv DENALI                 $tool_home/tools/denali_64bit
 
 
 
