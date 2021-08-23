@@ -1,0 +1,6 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /mnt/Software/EDA/Xilinx/Vivado/2018.2
+
+source-sh bash  $tool_home/settings64.sh
+
