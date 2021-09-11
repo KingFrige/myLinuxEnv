@@ -6,4 +6,5 @@ prepend-path    PATH             $tool_home/bin
 prepend-path    PATH             $tool_home/linux64/bin
 
 
+setenv VERDI_HOME        $tool_home
 setenv LM_LICENSE_FILE   27000@clough
