@@ -5,9 +5,12 @@ clone repo
 -------------
 
 ```
-cd ~
+# debian/ubuntu
+sudo apt install bash-completion
 
+cd ~
 git clone https://github.com/KingFrige/myLinuxEnv.git
+git clone https://github.com/gpakosz/.tmux
 ```
 
 link config
@@ -25,6 +28,15 @@ ln -s ~/myLinuxEnv/bash/bashrc ~/.bashrc
 # git
 ## NOTE: update info
 ln -s ~/myLinuxEnv/git/git-config ~/.gitconfig
+
+# vim
+
+ln -s ~/myLinuxEnv/vim/vimrc ~/.vimrc
+ln -s ~/myLinuxEnv/vim/gvimrc ~/.gvimrc
+
+# tmux
+
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 ```
 
 update modules

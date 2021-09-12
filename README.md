@@ -1,6 +1,6 @@
 # my Debian/Linux env
 
-## quick start
+## [quick start](setup.md)
 * [install basic software](https://www.cnblogs.com/OneFri/p/8308340.html)
 * [modules use](https://www.cnblogs.com/OneFri/p/11723628.html)
 * [beautify desktop of debian/Linux](https://www.cnblogs.com/OneFri/p/6104037.html)
@@ -11,7 +11,6 @@
 
 
 ## bash config
-* `apt install bash-completion`
 * [bash-it](https://github.com/Bash-it/bash-it)
 
 
