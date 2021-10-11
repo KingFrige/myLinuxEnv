@@ -6,7 +6,7 @@ clone repo
 
 ```
 # debian/ubuntu
-sudo apt install bash-completion
+sudo apt install git bash-completion
 
 cd ~
 git clone https://github.com/KingFrige/myLinuxEnv.git
