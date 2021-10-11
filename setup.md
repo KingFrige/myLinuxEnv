@@ -27,7 +27,7 @@ ln -s ~/myLinuxEnv/bash/bashrc ~/.bashrc
 
 # git
 ## NOTE: update info
-ln -s ~/myLinuxEnv/git/git-config ~/.gitconfig
+ln -s ~/myLinuxEnv/git/gitconfig ~/.gitconfig
 
 # vim
 
