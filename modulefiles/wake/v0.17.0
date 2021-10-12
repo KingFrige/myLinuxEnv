@@ -5,7 +5,7 @@ conflict        wake/v0.18.0
 
 module load protobuf/v3.6.0
 
-set              tool_home         /home/korben/tools/wake/v0.17.0
+set              tool_home         /home/stc/tools/wake/v0.17.0
 
 prepend-path     PATH              $tool_home/bin
 prepend-path     LIBRARY_PATH      $tool_home/lib

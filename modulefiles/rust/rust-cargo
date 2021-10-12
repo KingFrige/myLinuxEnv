@@ -2,6 +2,6 @@
 
 # conflict      rust/
 
-set              tool_home        /home/korben/.cargo 
+set              tool_home        /home/stc/.cargo 
 
 prepend-path     PATH             $tool_home/bin

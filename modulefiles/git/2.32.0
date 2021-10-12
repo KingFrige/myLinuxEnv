@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /home/korben/tools/git/git-2.32.0
+set             tool_home        /home/stc/tools/git/git-2.32.0
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib

@@ -1,7 +1,7 @@
 # export LD_LIBRARY_PATH="/usr/local/lib"
 
 # module
-export MODULEPATH=/home/korben/myLinuxEnv/modulefiles:$MODULEPATH
+export MODULEPATH=/home/stc/myLinuxEnv/modulefiles:$MODULEPATH
 if [ -f  /usr/local/Modules/init/profile.sh ]; then
   source /usr/local/Modules/init/profile.sh
 fi
