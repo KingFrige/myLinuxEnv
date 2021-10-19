@@ -1,0 +1,9 @@
+#%Module -*- tcl -*-
+
+# conflict        riscv_toolchain/gcc-master
+
+set             tool_home       /home/stc/tools/Benchmarks/spec_cpu2006 
+
+setenv          SPEC_DIR        $tool_home
+
+source-sh bash  $tool_home/shrc

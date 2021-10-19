@@ -4,18 +4,20 @@ conflict         riscv_toolchain/compile-verison
 conflict         riscv_toolchain/gcc-master
 conflict         riscv_toolchain/chipyard
 
-set              tool_home           /home/stc/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv64-unknown-elf-gcc-10.1.0-2020.08.2
-set              riscv_openocd_path  /home/stc/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv-openocd-0.10.0-2020.11.0
+set              tool_home           /home/stc/tools/riscv/sifive/FreedomStudio
 
-setenv           RISCV           $tool_home
-setenv           RISCV_PATH      $tool_home
+set              riscv_home          $tool_home/SiFive/riscv64-unknown-elf-toolchain-10.2.0-2020.12.8
+set              riscv_openocd_path  $tool_home/SiFive/riscv-openocd-0.10.0-2020.12.1
+
+setenv           RISCV           $riscv_home
+setenv           RISCV_PATH      $riscv_home
 setenv           RISCV_OPENOCD_PATH  $riscv_openocd_path
 
-prepend-path     PATH            $tool_home/bin
-prepend-path     LIBRARY_PATH    $tool_home/lib
-prepend-path     LD_LIBRARY_PATH $tool_home/lib
-prepend-path     LD_INCLUDE_PATH $tool_home/include
-prepend-path     MANPATH         $tool_home/share/man
+prepend-path     PATH            $riscv_home/bin
+prepend-path     LIBRARY_PATH    $riscv_home/lib
+prepend-path     LD_LIBRARY_PATH $riscv_home/lib
+prepend-path     LD_INCLUDE_PATH $riscv_home/include
+prepend-path     MANPATH         $riscv_home/share/man
 
 prepend-path     PATH            $riscv_openocd_path/bin
 prepend-path     LIBRARY_PATH    $riscv_openocd_path/lib
