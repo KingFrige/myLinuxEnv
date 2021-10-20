@@ -34,7 +34,6 @@ alias grep='grep --color'
 alias gg='gvim -O *c'
 alias gl='gvim -O *.log'
 alias ga='gvim -O *'
-alias gvim='vim'
 
 alias pp='pwd'
 
