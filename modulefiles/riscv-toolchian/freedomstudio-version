@@ -3,6 +3,7 @@
 conflict         riscv_toolchain/compile-verison
 conflict         riscv_toolchain/gcc-master
 conflict         riscv_toolchain/chipyard
+conflict        riscv_toolchain/rvv-intrinsic
 
 set              tool_home           /home/stc/tools/riscv/sifive/FreedomStudio
 
