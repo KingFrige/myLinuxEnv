@@ -1,11 +1,11 @@
 #%Module -*- tcl -*-
 
+conflict         gcc/gcc-6.5.0
 conflict         gcc/gcc-7.5.0
 conflict         gcc/gcc-8.2.0
 conflict         gcc/gcc-9.3.0
-conflict         gcc/gcc-11.2.0
 
-set              tool_home       /home/stc/tools/gcc/gcc-6.5.0
+set              tool_home       /home/stc/tools/gcc/gcc-11.2.0
 
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib
