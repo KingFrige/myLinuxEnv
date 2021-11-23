@@ -1,9 +1,6 @@
 #%Module -*- tcl -*-
 
-conflict        riscv_toolchain/freedomstudio-version
-conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/chipyard
-conflict        riscv_toolchain/bootlin
 conflict        riscv_toolchain/rvv-intrinsic
 
 set             tool_home         /home/stc/tools/riscv/llvm
