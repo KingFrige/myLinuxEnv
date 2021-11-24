@@ -4,9 +4,11 @@ conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/gcc-master
 
-set             tool_home        /home/korben/tools/riscv/llvm
-setenv          RISCV            $tool_home
-setenv          RISCV_PATH       $tool_home
+set             tool_home         /home/korben/tools/riscv/llvm
+set             riscv_gcc         /home/stc/tools/riscv/llvm
+setenv          LLVM              $tool_home
+setenv          GCC_TOOLCHAIN_DIR $riscv_gcc
+setenv          SYSROOT_DIR       $riscv_gcc/riscv64-unknown-elf
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
