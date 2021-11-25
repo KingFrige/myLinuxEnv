@@ -8,9 +8,9 @@ export CXX=/home/stc/tools/gcc/gcc-8.2.0/bin/g++
 cmake -G Ninja -DCMAKE_BUILD_TYPE="Release" \
   -DLLVM_ENABLE_PROJECTS="clang" \
   -DBUILD_SHARED_LIBS=True -DLLVM_USE_SPLIT_DWARF=True \
-  -DCMAKE_INSTALL_PREFIX="/home/stc/tools/riscv/llvm" \
+  -DCMAKE_INSTALL_PREFIX="/home/korben/tools/riscv/llvm" \
   -DLLVM_OPTIMIZED_TABLEGEN=True -DLLVM_BUILD_TESTS=False \
-  -DDEFAULT_SYSROOT="/home/stc/tools/riscv/llvm/riscv64-unknown-elf" \
+  -DDEFAULT_SYSROOT="/home/korben/tools/riscv/llvm/riscv64-unknown-elf" \
   -DLLVM_DEFAULT_TARGET_TRIPLE="riscv64-unknown-elf" \
   -DLLVM_TARGETS_TO_BUILD="RISCV" \
   ../llvm
