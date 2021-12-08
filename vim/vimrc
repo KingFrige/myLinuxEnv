@@ -17,6 +17,7 @@ runtime! debian.vim
 " set background=dark
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
+syntax enable
 syntax on
 
 " If using a dark background within the editing area and syntax highlighting
@@ -117,13 +118,6 @@ set cmdheight=2
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
-
-
-" 开启语法高亮功能
-syntax enable
-" 允许用指定语法高亮配色方案替换默认方案
-syntax on
-
 
 "配色方案
 " colorscheme solarized

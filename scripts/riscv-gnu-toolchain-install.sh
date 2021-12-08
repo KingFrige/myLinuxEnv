@@ -11,4 +11,4 @@ make -j`nproc`
 
 make linux -j`nproc`
 
-make -j`nproc` build-qemu
+# make -j`nproc` build-qemu
