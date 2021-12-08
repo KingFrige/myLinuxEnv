@@ -7,5 +7,6 @@ export CXX=/home/stc/tools/gcc/gcc-8.2.0/bin/g++
 
 ./configure --prefix=/home/stc/tools/riscv/llvm --enable-multilib
 make -j`nproc`
+make linux -j`nproc`
 
 make -j`nproc` build-qemu
