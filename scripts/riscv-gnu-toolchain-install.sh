@@ -8,6 +8,7 @@ export CXX=/home/stc/tools/gcc/gcc-8.2.0/bin/g++
 ./configure --prefix=/home/korben/tools/riscv/llvm --enable-multilib
 
 make -j`nproc`
+make linux -j`nproc`
 
 make linux -j`nproc`
 

@@ -18,3 +18,6 @@ cmake -G Ninja -DCMAKE_BUILD_TYPE="Release" \
 ninja
 
 # ninja install
+
+# if centos
+# sudo yum install -y devtoolset-9-gcc devtoolset-9-gcc-c++
