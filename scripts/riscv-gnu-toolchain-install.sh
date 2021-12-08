@@ -5,5 +5,6 @@ module load gcc/gcc-8.2.0
 
 ./configure --prefix=/home/stc/tools/riscv/llvm --enable-multilib
 make -j`nproc`
+make linux -j`nproc`
 
 make -j`nproc` build-qemu
