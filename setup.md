@@ -21,7 +21,7 @@ cd myLinuxEnv
 
 # bash
 ## update user-name
-sed "s/korben/`whoami`/g" `grep korben -rl bash`
+sed "s/guangdadong/`whoami`/g" `grep guangdadong -rl bash`
 ## link
 ln -s ~/myLinuxEnv/bash/bashrc ~/.bashrc
 
@@ -43,7 +43,7 @@ update modules
 ---------------
 
 ```
-grep -lr "\/opt" | xargs sed 's/\/opt/\/home\/korben\/tools/' -i
+grep -lr "\/opt" | xargs sed 's/\/opt/\/home\/guangdadong\/tools/' -i
 
 modulefiles/
 ├── eda

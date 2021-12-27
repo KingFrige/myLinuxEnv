@@ -20,8 +20,8 @@ PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\e[1;36m\]\$(git_branch
 
 
 ########### git ##########################
-if [ -f ~korben/myLinuxEnv/git/git-completion.bash ]; then
-  source ~korben/myLinuxEnv/git/git-completion.bash
+if [ -f ~guangdadong/myLinuxEnv/git/git-completion.bash ]; then
+  source ~guangdadong/myLinuxEnv/git/git-completion.bash
 fi
 
 ######################################
@@ -45,12 +45,12 @@ if [ -f ~/.bashrc_local ]; then
   source ~/.bashrc_local
 fi
 
-if [ -f ~korben/myLinuxEnv/bash/bashrc_modules ]; then
-  source ~korben/myLinuxEnv/bash/bashrc_modules
+if [ -f ~guangdadong/myLinuxEnv/bash/bashrc_modules ]; then
+  source ~guangdadong/myLinuxEnv/bash/bashrc_modules
 fi
  
-if [ -f ~korben/myLinuxEnv/bash/bashrc_aliases ]; then
-  source ~korben/myLinuxEnv/bash/bashrc_aliases
+if [ -f ~guangdadong/myLinuxEnv/bash/bashrc_aliases ]; then
+  source ~guangdadong/myLinuxEnv/bash/bashrc_aliases
 fi
 
 ###  powerline

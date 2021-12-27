@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /home/korben/tools/cmake/cmake-3.20.3-linux-x86_64
+set             tool_home        /home/guangdadong/tools/cmake/cmake-3.20.3-linux-x86_64
 setenv          RISCV            $tool_home
 setenv          RISCV_PATH       $tool_home
 
