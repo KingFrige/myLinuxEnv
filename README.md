@@ -9,6 +9,8 @@
 
 ## vim config
 
+* [molokai](https://github.com/tomasr/molokai)
+
 
 ## bash config
 * [bash-it](https://github.com/Bash-it/bash-it)
