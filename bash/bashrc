@@ -57,3 +57,20 @@ fi
 # export TERM="screen-256color"
 
 export MAKEFLAGS="$MAKEFLAGS -j4" # Assuming you have N cores on your host system
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/guangdadong/tools/conda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/guangdadong/tools/conda/etc/profile.d/conda.sh" ]; then
+        . "/home/guangdadong/tools/conda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/guangdadong/tools/conda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
