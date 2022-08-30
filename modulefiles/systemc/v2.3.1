@@ -1,0 +1,11 @@
+#%Module -*- tcl -*-
+
+conflict        v2.3.3
+
+set             tool_home         /usr/local/systemc-2.3.1
+setenv          SYSTEMC           $tool_home
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib-linux64
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib-linux64
+prepend-path    LD_INCLUDE_PATH  $tool_home/include

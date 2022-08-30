@@ -1,0 +1,8 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/m2s
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
