@@ -2,6 +2,8 @@
 
 set             tool_home         /home/guangdadong/tools/conda
 
+# setenv          PYTHONPATH       $tool_home/lib/python3.9/site-packages
+
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
