@@ -34,6 +34,8 @@ ln -s ~/myLinuxEnv/git/gitconfig ~/.gitconfig
 ln -s ~/myLinuxEnv/vim/vimrc ~/.vimrc
 ln -s ~/myLinuxEnv/vim/gvimrc ~/.gvimrc
 
+[vim-pathogen](https://github.com/tpope/vim-pathogen)
+
 # tmux
 
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf

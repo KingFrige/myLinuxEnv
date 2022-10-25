@@ -14,12 +14,6 @@ runtime! debian.vim
 " options, so any other options should be set AFTER setting 'compatible'.
 "set compatible
 
-" set background=dark
-" Vim5 and later versions support syntax highlighting. Uncommenting the next
-" line enables syntax highlighting by default.
-syntax enable
-syntax on
-
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 set background=dark
@@ -61,9 +55,9 @@ set nocompatible              " be iMproved, required
 "let mapleader=";"
 
 
-" 开启文件类型侦测
+syntax enable
+syntax on
 filetype on
-" 根据侦测到的不同类型加载对应的插件
 filetype plugin on
 
 " 让配置变更立即生效

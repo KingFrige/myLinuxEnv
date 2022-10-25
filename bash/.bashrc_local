@@ -6,3 +6,12 @@ alias xmind='/opt/XMind/xmind'
 alias setSnopsysLicense='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l /tmp/synopsys-debug.log'
 alias setCadenceLicense='/mnt/Software/EDA/Cadence/MODUS191/tools.lnx86/bin/64bit/lmgrd -c /mnt/Software/EDA/license/cadence/ALL_CDS.DAT -l /tmp/cadence-debug.log'
 alias setMentorLicense='/mnt/Software/EDA/Mentor/calibre2018/aoi_cal_2018.4_34.26/bin/lmgrd -c /mnt/Software/EDA/license/mentor/license.dat -l /tmp/mentor-debug.log'
+
+PATH="/home/korben/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/korben/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/korben/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/korben/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/korben/perl5"; export PERL_MM_OPT;
+
+
+
