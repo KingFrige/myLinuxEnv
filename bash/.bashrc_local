@@ -14,4 +14,6 @@ PERL_MB_OPT="--install_base \"/home/korben/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/korben/perl5"; export PERL_MM_OPT;
 
 
-
+# ruby / rvm
+PATH="/home/korben/.rvm/bin:${PATH}}"; export PATH;
+source /home/korben/.rvm/environments/ruby-2.7.6
