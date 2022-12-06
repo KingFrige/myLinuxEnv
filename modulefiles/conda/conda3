@@ -1,0 +1,11 @@
+#%Module -*- tcl -*-
+
+set             tool_home         /home/korben/tools/anaconda3
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    MANPATH          $tool_home/share/man
+
+# source-sh bash /home/korben/tools/conda/etc/profile.d/conda.sh
