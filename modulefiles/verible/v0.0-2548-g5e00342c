@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/verible
+
+prepend-path    PATH             $tool_home/bin
