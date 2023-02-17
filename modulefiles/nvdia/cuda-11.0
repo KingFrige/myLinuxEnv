@@ -1,0 +1,13 @@
+#%Module -*- tcl -*-
+
+conflict        nvidia/cuda-7.0
+
+set             tool_home         /home/guangdadong/tools/nvidia/cuda-11.0
+setenv          CUDA_HOME         $tool_home
+setenv          CUDA_PATH         $tool_home
+setenv          CUDA_INSTALL_PATH $tool_home
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib64
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib64
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
