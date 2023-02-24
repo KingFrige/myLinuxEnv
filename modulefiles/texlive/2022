@@ -1,0 +1,11 @@
+#%Module -*- tcl -*-
+
+conflict         texlive/2020
+
+set              tool_home         /home/guangdadong/tools/texlive
+
+prepend-path     PATH              $tool_home/bin/x86_64-linux
+prepend-path     LIBRARY_PATH      $tool_home/lib
+prepend-path     LD_LIBRARY_PATH   $tool_home/lib
+prepend-path     MANPATH           $tool_home/texmf-dist/doc/man
+prepend-path     INFOPATH          $tool_home/texmf-dist/doc/info
