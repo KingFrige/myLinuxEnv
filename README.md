@@ -26,6 +26,7 @@
 
 ## [Qt安装](http://download.qt.io/archive/qt/)
 
+## [tcl](https://www.tcl.tk/software/tcltk/download.html)
 
 ## office software
 * zoom

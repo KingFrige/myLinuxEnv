@@ -6,6 +6,12 @@ set             tool_home        /mnt/Software/EDA/Synopsys/verdi/Verdi_O-2018.0
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    PATH             $tool_home/linux64/bin
+prepend-path    LIBRARY_PATH     $tool_home/share/PLI/VCS/linux64
+prepend-path    LIBRARY_PATH     $tool_home/share/PLI/IUS/linux64
+prepend-path    LIBRARY_PATH     $tool_home/share/PLI/lib/linux64
+prepend-path    LD_LIBRARY_PATH  $tool_home/share/PLI/VCS/linux64
+prepend-path    LD_LIBRARY_PATH  $tool_home/share/PLI/IUS/linux64
+prepend-path    LD_LIBRARY_PATH  $tool_home/share/PLI/lib/linux64
 
 
 setenv VERDI_HOME        $tool_home

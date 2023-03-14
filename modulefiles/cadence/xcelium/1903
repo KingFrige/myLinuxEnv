@@ -7,7 +7,9 @@ prepend-path    PATH             $tool_home/bin
 set             tools_lnx86      $tool_home/tools.lnx86
 
 prepend-path    PATH             $tools_lnx86/bin
+prepend-path    LIBRARY_PATH     $tool_home/tools/cdsgcc/gcc/install/lib64
+prepend-path    LD_LIBRARY_PATH  $tool_home/tools/cdsgcc/gcc/install/lib64
 
-setenv CDS_LIC_FILE /mnt/Software/EDA/license/cadence/license.dat
+setenv CDS_LIC_FILE /home/korben/myLinuxEnv/modulefiles/cadence/xcelium/license.dat
 
 # source-sh bash ${tool_home}/env.sh
