@@ -1,0 +1,13 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/synapticad-19.00c-x64
+
+setenv          ASC_HOME       $tool_home
+setenv          SYNCAD_HOME    $tool_home
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LIBRARY_PATH     $tool_home/bin/x86_64
+prepend-path    LD_LIBRARY_PATH  $tool_home/bin/x86_64
+prepend-path    MANPATH          $tool_home/share/man
