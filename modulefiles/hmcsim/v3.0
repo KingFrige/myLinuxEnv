@@ -1,0 +1,10 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/hmcsim
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LIBRARY_PATH     $tool_home/cmc
+prepend-path    LD_LIBRARY_PATH  $tool_home/cmc
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
