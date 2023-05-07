@@ -1,13 +1,9 @@
 #%Module -*- tcl -*-
 
-module load gcc/gcc-8.2.0
-
-set             tool_home        /home/korben/tools/openEDA/verilator
-unsetenv        VERILATOR_ROOT
+set             tool_home        /home/korben/tools/openEDA/magic
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
 prepend-path    MANPATH          $tool_home/share/man
-prepend-path    PKG_CONFIG_PATH  $tool_home/share/pkgconfig

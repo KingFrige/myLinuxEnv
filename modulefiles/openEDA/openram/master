@@ -1,0 +1,7 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/korben/tools/openEDA/OpenRAM
+unsetenv        VERILATOR_ROOT
+
+setenv          OPENRAM_HOME     $tool_home/compiler
+setenv          OPENRAM_TECH     $tool_home/technology
