@@ -1,7 +1,10 @@
 #%Module -*- tcl -*-
 
 set             tool_home        /home/korben/tools/openEDA/OpenRAM
-unsetenv        VERILATOR_ROOT
+set             openram_home     $tool_home/compiler
+set             openram_tech     $tool_home/technology
 
-setenv          OPENRAM_HOME     $tool_home/compiler
-setenv          OPENRAM_TECH     $tool_home/technology
+prepend-path    PYTHONPATH       $openram_home
+
+setenv          OPENRAM_HOME     $openram_home
+setenv          OPENRAM_TECH     $openram_tech
