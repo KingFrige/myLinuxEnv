@@ -8,3 +8,4 @@ prepend-path    PYTHONPATH       $openram_home
 
 setenv          OPENRAM_HOME     $openram_home
 setenv          OPENRAM_TECH     $openram_tech
+setenv          PDK_ROOT         /home/korben/tools/openEDA/OpenRAM
