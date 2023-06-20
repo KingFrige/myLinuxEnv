@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/openEDA/vhdl2verilog
+
+prepend-path    PATH             $tool_home

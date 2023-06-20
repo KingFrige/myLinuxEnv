@@ -1,0 +1,13 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/guangdadong/tools/X-HDL
+setenv          XTEK_HOME        $tool_home
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LIBRARY_PATH     /usr/lib/x86_64-linux-gnu
+prepend-path    LD_LIBRARY_PATH  /usr/lib/x86_64-linux-gnu
+
+
+setenv LM_LICENSE_FILE           $tool_home/license.dat
