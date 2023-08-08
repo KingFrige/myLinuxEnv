@@ -1,7 +1,7 @@
 #%Module -*- tcl -*-
 
 set             tool_home        /home/guangdadong/tools/openEDA/verilator
-unsetenv        VERILATOR_ROOT
+setenv          VERILATOR_ROOT   $verilator_home
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
