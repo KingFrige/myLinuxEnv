@@ -3,6 +3,8 @@
 conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/chipyard
+conflict        riscv_toolchain/vortex
+conflict        riscv_toolchain/llvm
 
 set             tool_home        /home/korben/tools/riscv/gcc-master
 setenv          RISCV            $tool_home
