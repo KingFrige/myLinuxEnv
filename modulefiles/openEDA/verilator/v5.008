@@ -1,7 +1,5 @@
 #%Module -*- tcl -*-
 
-module load gcc/gcc-8.2.0
-
 set             tool_home        /home/korben/tools/openEDA/verilator
 unsetenv        VERILATOR_ROOT
 

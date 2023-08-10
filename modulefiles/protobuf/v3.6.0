@@ -3,6 +3,8 @@
 set              tool_home         /home/korben/tools/protobuf/protobuf-3.6.0
 
 prepend-path     PATH              $tool_home/bin
+prepend-path     LIBRARY_PATH     $tool_home/lib
+prepend-path     LD_LIBRARY_PATH  $tool_home/lib
 prepend-path     LD_INCLUDE_PATH   $tool_home/include
 
 prepend-path     PKG_CONFIG_PATH   $tool_home/lib/pkgconfig

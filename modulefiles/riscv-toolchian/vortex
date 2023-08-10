@@ -6,7 +6,7 @@ conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/chipyard
 
-set             riscv_gcc_home       /home/guangdadong/tools/vortex/riscv-gnu-toolchain
+set             riscv_gcc_home       /home/korben/tools/vortex/riscv-gnu-toolchain
 setenv          RISCV                $riscv_gcc_home
 setenv          RISCV_PATH           $riscv_gcc_home
 setenv          RISCV_TOOLCHAIN_PATH $riscv_gcc_home
@@ -17,7 +17,7 @@ prepend-path    LD_LIBRARY_PATH  $riscv_gcc_home/lib
 prepend-path    LD_INCLUDE_PATH  $riscv_gcc_home/include
 prepend-path    MANPATH          $riscv_gcc_home/share/man
 
-set             llvm_home        /home/guangdadong/tools/vortex/llvm-riscv
+set             llvm_home        /home/korben/tools/vortex/llvm-riscv
 setenv          LLVM_HOME        $llvm_home
 setenv          LLVM_PREFIX      $llvm_home
 
@@ -27,7 +27,7 @@ prepend-path    LD_LIBRARY_PATH  $llvm_home/lib
 prepend-path    LD_INCLUDE_PATH  $llvm_home/include
 prepend-path    MANPATH          $llvm_home/share/man
 
-set             verilator_home   /home/guangdadong/tools/vortex/verilator
+set             verilator_home   /home/korben/tools/vortex/verilator
 setenv          VERILATOR_ROOT   $verilator_home
 
 prepend-path    PATH             $verilator_home/bin
@@ -36,8 +36,8 @@ prepend-path    LD_LIBRARY_PATH  $verilator_home/lib
 prepend-path    LD_INCLUDE_PATH  $verilator_home/include
 prepend-path    MANPATH          $verilator_home/share/man
 
-set             pocl_compiler_home  /home/guangdadong/tools/vortex/pocl/compiler
-set             pocl_runtime_home   /home/guangdadong/tools/vortex/pocl/runtime
+set             pocl_compiler_home  /home/korben/tools/vortex/pocl/compiler
+set             pocl_runtime_home   /home/korben/tools/vortex/pocl/runtime
 setenv          POCL_CC_PATH        $pocl_compiler_home
 setenv          POCL_RT_PATH        $pocl_runtime_home
 
