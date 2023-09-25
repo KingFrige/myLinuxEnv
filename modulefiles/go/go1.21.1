@@ -1,9 +1,11 @@
 #%Module -*- tcl -*-
 
-conflict         go/go1.17.2
-
 set              tool_home       /home/korben/tools/go/go1.21.1
 
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib
 prepend-path     LD_LIBRARY_PATH $tool_home/lib
+
+setenv           GOROOT          $tool_home
+setenv           GOPATH          $::env(HOME)/go
+setenv           GOPROXY         https://goproxy.io,direct
