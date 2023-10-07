@@ -1,9 +1,9 @@
 #%Module -*- tcl -*-
 
 conflict         node/node-v16.13.2
-conflict         node/node-v18.18.0
+conflict         node/node-v18.16.0
 
-set              tool_home         /home/guangdadong/tools/node/node-v18.16.0-linux-x64
+set              tool_home                 /home/guangdadong/tools/node/node-v18.18.0-linux-x64
 set              user_node_module_home     $::env(HOME)/node_modules
 
 prepend-path     PATH              $tool_home/bin

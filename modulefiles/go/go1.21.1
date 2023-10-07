@@ -7,3 +7,6 @@ set              tool_home       /home/guangdadong/tools/go/go1.21.1
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib
 prepend-path     LD_LIBRARY_PATH $tool_home/lib
+
+setenv          GOPROXY          https://proxy.golang.com.cn,direct
+setenv          GOPATH           $tool_home
