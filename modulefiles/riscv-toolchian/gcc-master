@@ -5,6 +5,7 @@ conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/chipyard
 conflict        riscv_toolchain/vortex
 conflict        riscv_toolchain/llvm
+conflict        riscv_toolchain/riscv32
 
 set             tool_home        /home/korben/tools/riscv/gcc-master
 setenv          RISCV            $tool_home
