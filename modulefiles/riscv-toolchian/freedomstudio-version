@@ -5,7 +5,10 @@ conflict         riscv_toolchain/gcc-master
 conflict         riscv_toolchain/chipyard
 conflict         riscv_toolchain/llvm
 conflict         riscv_toolchain/vortex
-conflict        riscv_toolchain/riscv32
+conflict        riscv_toolchain/riscv32i
+conflict        riscv_toolchain/riscv32im
+conflict        riscv_toolchain/riscv32ic
+conflict        riscv_toolchain/riscv32imc
 
 set              tool_home           /home/korben/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv64-unknown-elf-gcc-10.1.0-2020.08.2
 set              riscv_openocd_path  /home/korben/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv-openocd-0.10.0-2020.11.0

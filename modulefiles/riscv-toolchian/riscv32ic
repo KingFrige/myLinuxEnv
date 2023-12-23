@@ -6,8 +6,11 @@ conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/chipyard
 conflict        riscv_toolchain/vortex
+conflict        riscv_toolchain/riscv32i
+conflict        riscv_toolchain/riscv32im
+conflict        riscv_toolchain/riscv32imc
 
-set             riscv_gcc_home       /home/korben/tools/riscv/riscv32
+set             riscv_gcc_home       /home/korben/tools/riscv/riscv32ic
 setenv          RISCV                $riscv_gcc_home
 setenv          RISCV_PATH           $riscv_gcc_home
 setenv          RISCV_TOOLCHAIN_PATH $riscv_gcc_home
