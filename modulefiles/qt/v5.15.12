@@ -1,0 +1,12 @@
+#%Module -*- tcl -*-
+
+set              qt_home         /home/korben/tools/Qt/v5.15.12
+
+prepend-path     PATH            $qt_home/bin
+prepend-path     LIBRARY_PATH    $qt_home/lib
+prepend-path     LD_LIBRARY_PATH $qt_home/lib
+prepend-path     LD_INCLUDE_PATH $qt_home/include
+prepend-path     PKG_CONFIG_PATH $qt_home/lib/pkgconfig
+
+setenv           QT_PLUGIN_PATH  $qt_home/plugins
+
