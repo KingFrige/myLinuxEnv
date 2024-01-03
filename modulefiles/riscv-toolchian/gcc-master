@@ -13,9 +13,11 @@ conflict        riscv_toolchain/riscv32imc
 set             tool_home        /home/korben/tools/riscv/gcc-master
 setenv          RISCV            $tool_home
 setenv          RISCV_PATH       $tool_home
+setenv          SPIKE_PATH       $tool_home/bin
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
 prepend-path    MANPATH          $tool_home/share/man
+prepend-path    PKG_CONFIG_PATH  $tool_home/lib/pkgconfig

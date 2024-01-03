@@ -4,5 +4,10 @@
 set             tool_home        $::env(HOME)/.local
 
 prepend-path    PATH             $tool_home/bin
-
-
+prepend-path    LIBRARY_PATH     /usr/lib
+prepend-path    LD_LIBRARY_PATH  /usr/lib
+prepend-path    LIBRARY_PATH     /usr/local/lib
+prepend-path    LD_LIBRARY_PATH  /usr/local/lib
+prepend-path    LD_INCLUDE_PATH  /usr/include
+prepend-path    LIBRARY_PATH     /opt/zoom/cef
+prepend-path    LD_LIBRARY_PATH  /opt/zoom/cef

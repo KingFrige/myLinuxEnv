@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/korben/tools/openEDA/icestorm
+
+prepend-path    PATH             $tool_home/bin

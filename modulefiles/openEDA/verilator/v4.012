@@ -4,7 +4,8 @@ conflict        openEDA/verilator/v5.014
 conflict        openEDA/verilator/v4.028
 
 set             tool_home        /home/korben/tools/openEDA/verilator/v4.012
-unsetenv        VERILATOR_ROOT
+
+setenv          VERILATOR_ROOT   $tool_home
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib

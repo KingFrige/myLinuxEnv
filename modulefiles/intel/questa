@@ -1,15 +1,9 @@
 #%Module -*- tcl -*-
 
-conflict        openEDA/verilator/v5.014
-conflict        openEDA/verilator/v4.012
-
-set             tool_home        /home/korben/tools/openEDA/verilator/v4.028
-
-setenv          VERILATOR_ROOT   $tool_home
+set             tool_home        /mnt/Software/EDA/intel/quartus/questa_fse
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
 prepend-path    MANPATH          $tool_home/share/man
-prepend-path    PKG_CONFIG_PATH  $tool_home/share/pkgconfig

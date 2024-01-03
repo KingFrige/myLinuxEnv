@@ -2,6 +2,8 @@
 
 set             tool_home        /home/korben/tools/openEDA/yosys
 
+setenv          YOSYS_ROOT       $tool_home
+
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     /usr/local/lib
 prepend-path    LD_LIBRARY_PATH  /usr/local/lib
