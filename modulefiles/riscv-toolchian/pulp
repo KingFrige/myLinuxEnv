@@ -1,0 +1,24 @@
+#%Module -*- tcl -*-
+
+conflict        riscv_toolchain/freedomstudio-version
+conflict        riscv_toolchain/rockt-tools
+conflict        riscv_toolchain/chipyard
+conflict        riscv_toolchain/vortex
+conflict        riscv_toolchain/llvm
+conflict        riscv_toolchain/riscv32i
+conflict        riscv_toolchain/riscv32im
+conflict        riscv_toolchain/riscv32ic
+conflict        riscv_toolchain/riscv32imc
+conflict        riscv_toolchain/gcc-master
+
+set             tool_home        /home/korben/tools/riscv/pulp
+setenv          RISCV            $tool_home
+setenv          RISCV_PATH       $tool_home
+setenv          SPIKE_PATH       $tool_home/bin
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    MANPATH          $tool_home/share/man
+prepend-path    PKG_CONFIG_PATH  $tool_home/lib/pkgconfig

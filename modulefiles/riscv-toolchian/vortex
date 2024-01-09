@@ -10,43 +10,45 @@ conflict        riscv_toolchain/riscv32im
 conflict        riscv_toolchain/riscv32ic
 conflict        riscv_toolchain/riscv32imc
 
-set             riscv_gcc_home       /home/korben/tools/vortex/riscv-gnu-toolchain
+set             too_home             /home/korben/tools/riscv/vortex
+
+set             riscv_gcc_home       $too_home/riscv-gnu-toolchain
 setenv          RISCV                $riscv_gcc_home
 setenv          RISCV_PATH           $riscv_gcc_home
 setenv          RISCV_TOOLCHAIN_PATH $riscv_gcc_home
 
-prepend-path    PATH             $riscv_gcc_home/bin
-prepend-path    LIBRARY_PATH     $riscv_gcc_home/lib
-prepend-path    LD_LIBRARY_PATH  $riscv_gcc_home/lib
-prepend-path    LD_INCLUDE_PATH  $riscv_gcc_home/include
-prepend-path    MANPATH          $riscv_gcc_home/share/man
+prepend-path    PATH                 $riscv_gcc_home/bin
+prepend-path    LIBRARY_PATH         $riscv_gcc_home/lib
+prepend-path    LD_LIBRARY_PATH      $riscv_gcc_home/lib
+prepend-path    LD_INCLUDE_PATH      $riscv_gcc_home/include
+prepend-path    MANPATH              $riscv_gcc_home/share/man
 
-set             llvm_home        /home/korben/tools/vortex/llvm-riscv
-setenv          LLVM_HOME        $llvm_home
-setenv          LLVM_PREFIX      $llvm_home
+set             llvm_home            $too_home/llvm-riscv
+setenv          LLVM_HOME            $llvm_home
+setenv          LLVM_PREFIX          $llvm_home
 
-prepend-path    PATH             $llvm_home/bin
-prepend-path    LIBRARY_PATH     $llvm_home/lib
-prepend-path    LD_LIBRARY_PATH  $llvm_home/lib
-prepend-path    LD_INCLUDE_PATH  $llvm_home/include
-prepend-path    MANPATH          $llvm_home/share/man
+prepend-path    PATH                 $llvm_home/bin
+prepend-path    LIBRARY_PATH         $llvm_home/lib
+prepend-path    LD_LIBRARY_PATH      $llvm_home/lib
+prepend-path    LD_INCLUDE_PATH      $llvm_home/include
+prepend-path    MANPATH              $llvm_home/share/man
 
-set             verilator_home   /home/korben/tools/vortex/verilator
-setenv          VERILATOR_ROOT   $verilator_home
+set             verilator_home       $too_home/verilator
+setenv          VERILATOR_ROOT       $verilator_home
 
-prepend-path    PATH             $verilator_home/bin
-prepend-path    LIBRARY_PATH     $verilator_home/lib
-prepend-path    LD_LIBRARY_PATH  $verilator_home/lib
-prepend-path    LD_INCLUDE_PATH  $verilator_home/include
-prepend-path    MANPATH          $verilator_home/share/man
+prepend-path    PATH                 $verilator_home/bin
+prepend-path    LIBRARY_PATH         $verilator_home/lib
+prepend-path    LD_LIBRARY_PATH      $verilator_home/lib
+prepend-path    LD_INCLUDE_PATH      $verilator_home/include
+prepend-path    MANPATH              $verilator_home/share/man
 
-set             pocl_compiler_home  /home/korben/tools/vortex/pocl/compiler
-set             pocl_runtime_home   /home/korben/tools/vortex/pocl/runtime
-setenv          POCL_CC_PATH        $pocl_compiler_home
-setenv          POCL_RT_PATH        $pocl_runtime_home
+set             pocl_compiler_home   $too_home/pocl/compiler
+set             pocl_runtime_home    $too_home/pocl/runtime
+setenv          POCL_CC_PATH         $pocl_compiler_home
+setenv          POCL_RT_PATH         $pocl_runtime_home
 
-prepend-path    PATH                $pocl_compiler_home/bin
-prepend-path    LIBRARY_PATH        $pocl_compiler_home/lib
-prepend-path    LD_LIBRARY_PATH     $pocl_compiler_home/lib
-prepend-path    LD_INCLUDE_PATH     $pocl_compiler_home/include
-prepend-path    MANPATH             $pocl_compiler_home/share/man
+prepend-path    PATH                 $pocl_compiler_home/bin
+prepend-path    LIBRARY_PATH         $pocl_compiler_home/lib
+prepend-path    LD_LIBRARY_PATH      $pocl_compiler_home/lib
+prepend-path    LD_INCLUDE_PATH      $pocl_compiler_home/include
+prepend-path    MANPATH              $pocl_compiler_home/share/man
