@@ -2,6 +2,8 @@
 
 set             tool_home        /mnt/Software/EDA/Cadence/XCELIUM1903
 
+setenv XCELIUM_HOME $tool_home
+
 prepend-path    PATH             $tool_home/bin
 
 set             tools_lnx86      $tool_home/tools.lnx86
