@@ -1,10 +1,10 @@
 #%Module -*- tcl -*-
 
 conflict        openEDA/verilator/v5.014
+conflict        openEDA/verilator/v4.012
 conflict        openEDA/verilator/v4.028
-conflict        openEDA/verilator/v4.100
 
-set             tool_home        /home/korben/tools/openEDA/verilator/v4.012
+set             tool_home        /home/korben/tools/openEDA/verilator/v4.100
 
 setenv          VERILATOR_ROOT   $tool_home
 
