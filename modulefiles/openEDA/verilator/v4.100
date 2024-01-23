@@ -5,6 +5,7 @@ conflict        openEDA/verilator/v4.012
 conflict        openEDA/verilator/v4.028
 conflict        openEDA/verilator/v4.102
 conflict        openEDA/verilator/v4.228
+conflict        openEDA/verilator/v5.002
 
 set             tool_home        /home/korben/tools/openEDA/verilator/v4.100
 
