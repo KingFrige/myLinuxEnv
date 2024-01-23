@@ -3,7 +3,7 @@
 conflict        openEDA/verilator/v4.028
 conflict        openEDA/verilator/v4.100
 
-set             tool_home        /home/guangdadong/tools/openEDA/verilator/v4.028
+set             tool_home        /home/guangdadong/tools/openEDA/verilator/v5.002
 setenv          VERILATOR_ROOT   $tool_home
 
 prepend-path    PATH             $tool_home/bin
