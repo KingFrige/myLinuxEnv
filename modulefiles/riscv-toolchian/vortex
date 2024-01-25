@@ -7,43 +7,65 @@ conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/chipyard
 conflict        riscv_toolchain/spike-cosim
 
-set             riscv_gcc_home       /home/guangdadong/tools/vortex/riscv-gnu-toolchain
-setenv          RISCV                $riscv_gcc_home
-setenv          RISCV_PATH           $riscv_gcc_home
-setenv          RISCV_TOOLCHAIN_PATH $riscv_gcc_home
 
-prepend-path    PATH             $riscv_gcc_home/bin
-prepend-path    LIBRARY_PATH     $riscv_gcc_home/lib
-prepend-path    LD_LIBRARY_PATH  $riscv_gcc_home/lib
-prepend-path    LD_INCLUDE_PATH  $riscv_gcc_home/include
-prepend-path    MANPATH          $riscv_gcc_home/share/man
+set             tool_home            /opt
 
-set             llvm_home        /home/guangdadong/tools/vortex/llvm-riscv
+set             riscv32_gcc_home       $tool_home/riscv-gnu-toolchain
+prepend-path    PATH                   $riscv32_gcc_home/bin
+prepend-path    LIBRARY_PATH           $riscv32_gcc_home/lib
+prepend-path    LD_LIBRARY_PATH        $riscv32_gcc_home/lib
+prepend-path    LD_INCLUDE_PATH        $riscv32_gcc_home/include
+prepend-path    MANPATH                $riscv32_gcc_home/share/man
+
+
+set             riscv64_gcc_home       $tool_home/riscv64-gnu-toolchain
+prepend-path    PATH                   $riscv64_gcc_home/bin
+prepend-path    LIBRARY_PATH           $riscv64_gcc_home/lib
+prepend-path    LD_LIBRARY_PATH        $riscv64_gcc_home/lib
+prepend-path    LD_INCLUDE_PATH        $riscv64_gcc_home/include
+prepend-path    MANPATH                $riscv64_gcc_home/share/man
+
+
+set             llvm_home        $tool_home/llvm-vortex
 setenv          LLVM_HOME        $llvm_home
 setenv          LLVM_PREFIX      $llvm_home
-
 prepend-path    PATH             $llvm_home/bin
 prepend-path    LIBRARY_PATH     $llvm_home/lib
 prepend-path    LD_LIBRARY_PATH  $llvm_home/lib
 prepend-path    LD_INCLUDE_PATH  $llvm_home/include
 prepend-path    MANPATH          $llvm_home/share/man
 
-set             verilator_home   /home/guangdadong/tools/vortex/verilator
-setenv          VERILATOR_ROOT   $verilator_home
 
+set             verilator_home   $tool_home/verilator
+setenv          VERILATOR_ROOT   $verilator_home
 prepend-path    PATH             $verilator_home/bin
 prepend-path    LIBRARY_PATH     $verilator_home/lib
 prepend-path    LD_LIBRARY_PATH  $verilator_home/lib
 prepend-path    LD_INCLUDE_PATH  $verilator_home/include
 prepend-path    MANPATH          $verilator_home/share/man
 
-set             pocl_compiler_home  /home/guangdadong/tools/vortex/pocl/compiler
-set             pocl_runtime_home   /home/guangdadong/tools/vortex/pocl/runtime
-setenv          POCL_CC_PATH        $pocl_compiler_home
-setenv          POCL_RT_PATH        $pocl_runtime_home
 
-prepend-path    PATH                $pocl_compiler_home/bin
-prepend-path    LIBRARY_PATH        $pocl_compiler_home/lib
-prepend-path    LD_LIBRARY_PATH     $pocl_compiler_home/lib
-prepend-path    LD_INCLUDE_PATH     $pocl_compiler_home/include
-prepend-path    MANPATH             $pocl_compiler_home/share/man
+set             yosys_home       $tool_home/yosys
+prepend-path    PATH             $yosys_home/bin
+prepend-path    LIBRARY_PATH     $yosys_home/lib
+prepend-path    LD_LIBRARY_PATH  $yosys_home/lib
+prepend-path    LD_INCLUDE_PATH  $yosys_home/include
+prepend-path    MANPATH          $yosys_home/share/man
+
+
+set             sv2v_home        $tool_home/sv2v
+prepend-path    PATH             $sv2v_home/bin
+prepend-path    LIBRARY_PATH     $sv2v_home/lib
+prepend-path    LD_LIBRARY_PATH  $sv2v_home/lib
+prepend-path    LD_INCLUDE_PATH  $sv2v_home/include
+prepend-path    MANPATH          $sv2v_home/share/man
+
+
+set             pocl_home           /home/guangdadong/tools/riscv/vortex/pocl
+setenv          POCL_CC_PATH        $pocl_home
+setenv          POCL_RT_PATH        $pocl_home
+prepend-path    PATH                $pocl_home/bin
+prepend-path    LIBRARY_PATH        $pocl_home/lib
+prepend-path    LD_LIBRARY_PATH     $pocl_home/lib
+prepend-path    LD_INCLUDE_PATH     $pocl_home/include
+
