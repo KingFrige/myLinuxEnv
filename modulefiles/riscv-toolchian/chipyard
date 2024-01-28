@@ -1,8 +1,8 @@
 #%Module -*- tcl -*-
 
+conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/rockt-tools
-conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/vortex
 conflict        riscv_toolchain/riscv32i

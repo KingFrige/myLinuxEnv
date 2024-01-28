@@ -34,13 +34,12 @@ prepend-path    LD_LIBRARY_PATH      $llvm_home/lib
 prepend-path    LD_INCLUDE_PATH      $llvm_home/include
 prepend-path    MANPATH              $llvm_home/share/man
 
-set             pocl_compiler_home   $tool_home/pocl/compiler
-set             pocl_runtime_home    $tool_home/pocl/runtime
-setenv          POCL_CC_PATH         $pocl_compiler_home
-setenv          POCL_RT_PATH         $pocl_runtime_home
+set             pocl_home            $tool_home/pocl
+setenv          POCL_CC_PATH         $pocl_home
+setenv          POCL_RT_PATH         $pocl_home
 
-prepend-path    PATH                 $pocl_compiler_home/bin
-prepend-path    LIBRARY_PATH         $pocl_compiler_home/lib
-prepend-path    LD_LIBRARY_PATH      $pocl_compiler_home/lib
-prepend-path    LD_INCLUDE_PATH      $pocl_compiler_home/include
-prepend-path    MANPATH              $pocl_compiler_home/share/man
+prepend-path    PATH                 $pocl_home/bin
+prepend-path    LIBRARY_PATH         $pocl_home/lib64
+prepend-path    LD_LIBRARY_PATH      $pocl_home/lib64
+prepend-path    LD_INCLUDE_PATH      $pocl_home/include
+prepend-path    MANPATH              $pocl_home/share/man
