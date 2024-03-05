@@ -7,6 +7,7 @@ conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/spike-cosim
 conflict        riscv_toolchain/vortex
 conflict        riscv_toolchain/riscv32-imc
+conflict        riscv_toolchain/riscv32-im
 
 set             tool_home        /home/guangdadong/tools/riscv/chipyard
 setenv          RISCV            $tool_home

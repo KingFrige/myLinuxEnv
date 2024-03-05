@@ -6,6 +6,8 @@ conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/chipyard
 conflict        riscv_toolchain/spike-cosim
+conflict        riscv_toolchain/riscv32-imc
+conflict        riscv_toolchain/riscv32-im
 
 
 set             tool_home            /opt
