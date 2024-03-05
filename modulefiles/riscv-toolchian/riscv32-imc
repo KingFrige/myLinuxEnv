@@ -3,22 +3,17 @@
 conflict        riscv_toolchain/freedomstudio-version
 conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/chipyard
-conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/llvm
+conflict        riscv_toolchain/spike-cosim
 conflict        riscv_toolchain/vortex
-conflict        riscv_toolchain/riscv32-imc
+conflict        riscv_toolchain/gcc-master
 
-set             tool_home        /home/guangdadong/tools/riscv/gcc-master
+set             tool_home        /home/guangdadong/tools/riscv/riscv32-imc
 setenv          RISCV            $tool_home
 setenv          RISCV_PATH       $tool_home
-
-set             spike_home       /home/guangdadong/tools/riscv/spike-cosim 
-setenv          PKG_CONFIG_PATH  $spike_home/lib/pkgconfig
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
 prepend-path    MANPATH          $tool_home/share/man
-
-append-path    PKG_CONFIG_PATH  $::env(PATH)
