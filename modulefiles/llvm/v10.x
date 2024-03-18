@@ -1,9 +1,10 @@
 #%Module -*- tcl -*-
-#
-conflict        cmake/v3.8.2
-conflict        cmake/v3.20.3
 
-set             tool_home        /home/korben/tools/cmake/v3.28.1
+conflict        llvm/v16.x
+
+set             tool_home        /home/korben/tools/llvm/v10.x
+
+setenv          LLVM_HOME        $tool_home/bin
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib

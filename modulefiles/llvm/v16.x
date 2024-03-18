@@ -1,5 +1,7 @@
 #%Module -*- tcl -*-
 
+conflict        llvm/v10.x
+
 set             tool_home        /home/korben/tools/llvm/v16.x
 
 setenv          LLVM_HOME        $tool_home/bin
