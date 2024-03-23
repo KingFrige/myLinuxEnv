@@ -2,9 +2,9 @@
 
 conflict         gcc/gcc-7.5.0
 conflict         gcc/gcc-9.3.0
-conflict         gcc/gcc-13.2.0
+conflict         gcc/gcc-12.3.0
 
-set              tool_home       /home/korben/tools/gcc/gcc-12.3.0
+set              tool_home       /home/korben/tools/gcc/gcc-13.2.0
 setenv           CC              $tool_home/bin/gcc
 setenv           CXX             $tool_home/bin/g++
 
