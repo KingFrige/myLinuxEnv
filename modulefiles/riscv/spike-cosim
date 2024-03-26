@@ -9,6 +9,7 @@ conflict        riscv_toolchain/vortex
 conflict        riscv_toolchain/riscv32-imc
 conflict        riscv_toolchain/riscv32-im
 conflict        riscv_toolchain/ventus
+conflict        riscv_toolchain/cva6
 
 set             tool_home        /home/guangdadong/tools/riscv/gcc-master
 setenv          RISCV            $tool_home
@@ -23,4 +24,4 @@ prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
 prepend-path    MANPATH          $tool_home/share/man
 
-append-path    PKG_CONFIG_PATH  $::env(PATH)
+append-path     PKG_CONFIG_PATH  $::env(PATH)

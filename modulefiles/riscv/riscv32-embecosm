@@ -1,16 +1,18 @@
 #%Module -*- tcl -*-
 
-conflict        riscv_toolchain/freedomstudio-version
-conflict        riscv_toolchain/rockt-tools
+conflict        riscv_toolchain/gcc-master
 conflict        riscv_toolchain/chipyard
+conflict        riscv_toolchain/rockt-tools
 conflict        riscv_toolchain/llvm
 conflict        riscv_toolchain/spike-cosim
 conflict        riscv_toolchain/vortex
 conflict        riscv_toolchain/riscv32-imc
 conflict        riscv_toolchain/riscv32-im
 conflict        riscv_toolchain/ventus
+conflict        riscv_toolchain/cva6
 
-set             tool_home           /home/guangdadong/tools/riscv/gcc-master
+set             tool_home           /home/guangdadong/tools/riscv/riscv32-embecosm
+
 setenv          RISCV               $tool_home
 setenv          RISCV_PATH          $tool_home
 
@@ -18,6 +20,7 @@ prepend-path    PATH                $tool_home/bin
 prepend-path    LIBRARY_PATH        $tool_home/lib
 prepend-path    LD_LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_INCLUDE_PATH     $tool_home/include
+prepend-path    MANPATH             $tool_home/share/man
+
 prepend-path    C_INCLUDE_PATH      $tool_home/include
 prepend-path    CPLUS_INCLUDE_PATH  $tool_home/include
-prepend-path    MANPATH             $tool_home/share/man

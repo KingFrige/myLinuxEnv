@@ -9,6 +9,7 @@ conflict        riscv_toolchain/spike-cosim
 conflict        riscv_toolchain/riscv32-imc
 conflict        riscv_toolchain/riscv32-im
 conflict        riscv_toolchain/ventus
+conflict        riscv_toolchain/cva6
 
 
 set             tool_home            /opt
