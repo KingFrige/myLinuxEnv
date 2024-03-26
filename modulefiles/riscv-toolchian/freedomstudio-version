@@ -8,6 +8,7 @@ conflict         riscv_toolchain/spike-cosim
 conflict         riscv_toolchain/vortex
 conflict         riscv_toolchain/riscv32-imc
 conflict         riscv_toolchain/riscv32-im
+conflict         riscv_toolchain/ventus
 
 set              tool_home           /home/guangdadong/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv64-unknown-elf-gcc-10.1.0-2020.08.2
 set              riscv_openocd_path  /home/guangdadong/tools/riscv/sifive/FreedomStudio-4.7.2.2020-11-3-x86_64-linux-ubuntu14/SiFive/riscv-openocd-0.10.0-2020.11.0
