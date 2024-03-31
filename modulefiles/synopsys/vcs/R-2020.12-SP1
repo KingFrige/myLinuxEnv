@@ -1,8 +1,8 @@
 #%Module -*- tcl -*-
-#
-conflict        synopsys/vcs/R-2020.12-SP1
 
-set             tool_home        /mnt/Software/EDA/Synopsys/vcs/O-2018.09-SP2
+conflict        synopsys/vcs/O-2018.09-SP2
+
+set             tool_home        /mnt/Software/EDA/Synopsys/vcs/R-2020.12-SP1
 
 setenv  SYNOPSYS                 $tool_home
 setenv  VCS_HOME                 $tool_home

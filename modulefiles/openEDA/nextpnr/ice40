@@ -1,0 +1,7 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /home/korben/tools/openEDA/nextpnr/ice40
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib64
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib64
