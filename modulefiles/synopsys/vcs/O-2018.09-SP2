@@ -1,6 +1,7 @@
 #%Module -*- tcl -*-
 #
 conflict        synopsys/vcs/R-2020.12-SP1
+conflict        synopsys/vcs/T-2022.06-SP2
 
 set             tool_home        /mnt/Software/EDA/Synopsys/vcs/O-2018.09-SP2
 
@@ -11,7 +12,8 @@ prepend-path    PATH             $tool_home/bin
 prepend-path    PATH             $tool_home/linux64/bin
 
 
-setenv LM_LICENSE_FILE   27000@clough
+setenv LM_LICENSE_FILE      27000@clough
+setenv SNPSLMD_LICENSE_FILE 27000@clough
 
 setenv VCS_ARCH_OVERRIDE linux
 setenv VCS_TARGET_ARCH   linux64

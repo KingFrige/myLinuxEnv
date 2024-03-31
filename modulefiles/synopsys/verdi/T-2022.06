@@ -2,7 +2,7 @@
 
 conflict        synopsys/verdi/O-2018.09-SP2
 
-set             tool_home        /mnt/Software/EDA/Synopsys/verdi/Verdi_N-2017.12-SP2
+set             tool_home        /mnt/Software/EDA/Synopsys/verdi/T-2022.06
 
 setenv          NOVAS_HOME       ${tool_home}
 setenv          NOVAS_VCS_ARGS   "-P ${tool_home}/share/PLI/VCS/LINUX64/novas.tab   ${tool_home}/share/PLI/VCS/LINUX64/pli.a "

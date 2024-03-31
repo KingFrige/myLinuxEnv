@@ -3,7 +3,10 @@ alias IdeaIC="/mnt/DownLoad/tools/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh
 alias fff='/mnt/DownLoad/tools/firefox/firefox &'
 alias xmind='/opt/XMind/xmind'
 
-alias setSnopsysLicense='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l /tmp/synopsys-debug.log'
+alias setSynopsysLicense2018='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l /tmp/synopsys2018-debug.log'
+alias setSynopsysLicense2023ocad='/mnt/Software/EDA/Synopsys/scl/2023.09/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/Synopsys-ocad.dat -l /tmp/synopsys2023-debug.log'
+alias setSynopsysLicense2023ocad2='/mnt/Software/EDA/Synopsys/scl/2023.09/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/Synopsys-ocad2.dat -l /tmp/synopsys2023-debug.log'
+
 # alias setCadenceLicense='/mnt/Software/EDA/Cadence/MODUS191/tools.lnx86/bin/64bit/lmgrd -c /mnt/Software/EDA/license/cadence/ALL_CDS.DAT -l /tmp/cadence-debug.log'
 alias setMentorLicense='/mnt/Software/EDA/Mentor/calibre2018/aoi_cal_2018.4_34.26/bin/lmgrd -c /mnt/Software/EDA/license/mentor/license.dat -l /tmp/mentor-debug.log'
 
