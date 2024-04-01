@@ -1,8 +1,8 @@
 #%Module -*- tcl -*-
 
-conflict        synopsys/vcs/R-2020.09-SP4
+conflict        synopsys/vcs/O-2018.06-SP1
 
-set             tool_home        /mnt/Software/EDA/Synopsys/syn/O-2018.06-SP1
+set             tool_home        /mnt/Software/EDA/Synopsys/syn/R-2020.09-SP4
 
 prepend-path    PATH             $tool_home/bin
 
