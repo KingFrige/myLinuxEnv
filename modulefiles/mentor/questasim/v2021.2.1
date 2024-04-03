@@ -1,11 +1,14 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /mnt/Software/EDA/intel/quartus/questa_fse
+set             tool_home        /mnt/Software/EDA/Mentor/questasim
 
 prepend-path    PATH             $tool_home/bin
+prepend-path    PATH             $tool_home/linux_x86_64
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
-prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    LD_INCLUDE_PATH  $tool_home/share/include
+
 
 setenv MGLS_LICENSE_FILE         /mnt/Software/EDA/license/mentor/license.dat
 setenv MGC_PDF_READER            evince
+
