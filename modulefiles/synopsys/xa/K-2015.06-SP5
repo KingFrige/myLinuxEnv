@@ -3,3 +3,6 @@
 set             tool_home        /mnt/Software/EDA/Synopsys/xa/K-2015.06-SP5
 
 prepend-path    PATH             $tool_home/bin
+
+setenv LM_LICENSE_FILE      27000@clough
+setenv SNPSLMD_LICENSE_FILE 27000@clough

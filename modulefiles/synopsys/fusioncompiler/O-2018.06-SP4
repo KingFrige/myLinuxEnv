@@ -3,3 +3,6 @@
 set             tool_home        /mnt/Software/EDA/Synopsys/fusioncompiler/O-2018.06-SP4
 
 prepend-path    PATH             $tool_home/bin
+
+setenv LM_LICENSE_FILE      27000@clough
+setenv SNPSLMD_LICENSE_FILE 27000@clough

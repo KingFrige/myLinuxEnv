@@ -3,3 +3,6 @@
 set             tool_home        /mnt/Software/EDA/Synopsys/hspice/N-2017.12-SP2/hspice
 
 prepend-path    PATH             $tool_home/bin
+
+setenv LM_LICENSE_FILE      27000@clough
+setenv SNPSLMD_LICENSE_FILE 27000@clough

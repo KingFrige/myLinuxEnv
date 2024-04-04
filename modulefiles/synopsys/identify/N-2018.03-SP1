@@ -3,3 +3,5 @@
 set             tool_home        /mnt/Software/EDA/Synopsys/identify/N-2018.03-SP1
 
 prepend-path    PATH             $tool_home/bin
+
+setenv LM_LICENSE_FILE      27000@clough
