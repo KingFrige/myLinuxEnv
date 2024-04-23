@@ -1,6 +1,7 @@
 #%Module -*- tcl -*-
 
 conflict        llvm/v10.x
+conflict        llvm/mgpusim
 
 set             tool_home        /home/korben/tools/llvm/v16.x
 
