@@ -1,0 +1,22 @@
+#%Module -*- tcl -*-
+
+set             tool_home             /home/guangdadong/tools/rocm
+
+setenv          ROCM_PATH             $tool_home
+setenv          ROCM_ROOT             $tool_home
+setenv          ROCM_INSTALL_DIR      $tool_home
+setenv          HIP_PATH              $tool_home/hip
+
+setenv          HIPCXX                $tool_home/bin/hipcc
+
+prepend-path    PATH                  $tool_home/bin
+prepend-path    LIBRARY_PATH          $tool_home/lib
+prepend-path    LD_LIBRARY_PATH       $tool_home/lib
+prepend-path    LD_INCLUDE_PATH       $tool_home/include
+
+
+prepend-path    LIBRARY_PATH          $tool_home/hsa/lib
+prepend-path    LD_LIBRARY_PATH       $tool_home/hsa/lib
+prepend-path    LD_INCLUDE_PATH       $tool_home/hsa/include
+
+module load rocm/llvm-v6.1.10
