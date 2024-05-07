@@ -5,9 +5,16 @@ set             tool_home             /home/guangdadong/tools/rocm
 setenv          ROCM_PATH             $tool_home
 setenv          ROCM_ROOT             $tool_home
 setenv          ROCM_INSTALL_DIR      $tool_home
-setenv          HIP_PATH              $tool_home/hip
 
+setenv          HIP_PLATFORM          amd
+setenv          HIP_RUNTIME           rocclr
+setenv          HIP_COMPILER          clang
 setenv          HIPCXX                $tool_home/bin/hipcc
+setenv          HIP_PATH              $tool_home/hip
+#setenv          HIP_DEVICE_LIB_PATH   $tool_home/amdgcn/bitcode
+
+#setenv          DEVICE_LIB_PATH       $tool_home/amdgcn/bitcode
+setenv          HSA_PATH              $tool_home/hsa
 
 prepend-path    PATH                  $tool_home/bin
 prepend-path    LIBRARY_PATH          $tool_home/lib

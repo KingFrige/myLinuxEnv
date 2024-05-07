@@ -3,6 +3,7 @@
 set             tool_home        /home/guangdadong/tools/rocm/llvm
 
 setenv          LLVM_PATH        $tool_home
+setenv          HIP_CLANG_PATH   $tool_home/bin
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
