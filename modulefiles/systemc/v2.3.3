@@ -1,8 +1,11 @@
 #%Module -*- tcl -*-
 
 set             tool_home         /home/korben/tools/systemc/v2.3.3
+
 setenv          SYSTEMC           $tool_home
 setenv          SYSTEMC_HOME      $tool_home
+setenv          SYSTEMC_INC       $tool_home/include
+setenv          SYSTEMC_LIB       $tool_home/lib-linux64
 
 prepend-path    LIBRARY_PATH     $tool_home/lib-linux64
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib-linux64
