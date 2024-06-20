@@ -1,8 +1,11 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /home/korben/tools/hdf5/hdf5-1.13.3
+conflict        hdf5/v1.14.4.3
+
+set             tool_home        /home/korben/tools/hdf5/v1.13.3
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    LIBRARY_PATH     $tool_home/lib
 prepend-path    LD_LIBRARY_PATH  $tool_home/lib
 prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    CPATH            $tool_home/include
