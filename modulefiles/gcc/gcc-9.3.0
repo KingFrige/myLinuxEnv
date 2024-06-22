@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-conflict         gcc/gcc-7.5.0
+conflict         gcc/gcc-12.2.0
 conflict         gcc/gcc-12.3.0
 conflict         gcc/gcc-13.2.0
 
@@ -10,8 +10,8 @@ setenv           CXX             $tool_home/bin/g++
 
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LIBRARY_PATH    $tool_home/lib64
 prepend-path     LD_LIBRARY_PATH $tool_home/lib
-prepend-path     LD_LIBRARY_PATH $tool_home/lib64
 prepend-path     LD_LIBRARY_PATH $tool_home/lib64
 prepend-path     LD_INCLUDE_PATH $tool_home/include
 prepend-path     MANPATH         $tool_home/share/man
