@@ -1,0 +1,11 @@
+#%Module -*- tcl -*-
+
+set            tool_home           /home/guangdadong/tools/glib
+
+prepend-path   PATH                $tool_home/bin
+prepend-path   LIBRARY_PATH        $tool_home/lib
+prepend-path   LD_LIBRARY_PATH     $tool_home/lib
+prepend-path   LD_INCLUDE_PATH     $tool_home/include
+prepend-path   C_INCLUDE_PATH      $tool_home/include
+prepend-path   CPLUS_INCLUDE_PATH  $tool_home/include
+prepend-path   MANPATH             $tool_home/share/man
