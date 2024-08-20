@@ -1,7 +1,0 @@
-#%Module -*- tcl -*-
-
-# conflict      rust/
-
-set              tool_home        /home/korben/.cargo 
-
-prepend-path     PATH             $tool_home/bin

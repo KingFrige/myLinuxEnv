@@ -1,8 +1,0 @@
-#%Module -*- tcl -*-
-
-set             tool_home        /mnt/Software/EDA/Synopsys/icc/O-2018.06-SP1
-
-prepend-path    PATH             $tool_home/bin
-
-
-setenv LM_LICENSE_FILE   27000@clough

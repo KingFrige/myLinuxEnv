@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home       /home/korben/tools/Benchmarks/spec_cpu2006 
+set             tool_home       /home/guangda.dong/tools/Benchmarks/spec_cpu2006 
 
 setenv          SPEC_DIR        $tool_home
 

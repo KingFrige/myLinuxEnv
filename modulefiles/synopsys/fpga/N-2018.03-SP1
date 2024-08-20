@@ -1,5 +1,0 @@
-#%Module -*- tcl -*-
-
-set             tool_home        /mnt/Software/EDA/Synopsys/fpga/N-2018.03-SP1
-
-prepend-path    PATH             $tool_home/bin

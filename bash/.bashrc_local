@@ -1,7 +1,7 @@
 alias IdeaIC="/mnt/DownLoad/tools/JetBrains/idea/idea-IC-201.8538.31/bin/idea.sh"
 
 alias fff='/mnt/DownLoad/tools/firefox/firefox &'
-alias xmind='/opt/XMind/xmind'
+alias xmind='/home/korben/tools/XMind/xmind'
 
 alias setSnopsysLicense='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l /tmp/synopsys-debug.log'
 alias setCadenceLicense='/mnt/Software/EDA/Cadence/MODUS191/tools.lnx86/bin/64bit/lmgrd -c /mnt/Software/EDA/license/cadence/ALL_CDS.DAT -l /tmp/cadence-debug.log'

@@ -1,5 +1,0 @@
-#%Module -*- tcl -*-
-
-set             tool_home        /mnt/Software/EDA/Synopsys/siliconsmart/N-2017.12-SP2
-
-prepend-path    PATH             $tool_home/bin

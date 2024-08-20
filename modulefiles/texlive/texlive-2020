@@ -2,7 +2,7 @@
 
 # conflict   texlive/
 
-set             tool_home         /home/korben/tools/texlive/2020
+set             tool_home         /home/guangda.dong/tools/texlive/2020
 
 prepend-path     PATH              $tool_home/bin/x86_64-linux
 prepend-path     LIBRARY_PATH      $tool_home/lib

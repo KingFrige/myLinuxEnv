@@ -2,7 +2,7 @@
 
 conflict         java/jdk-16.0.2
 
-set              tool_home       /home/korben/tools/java/jdk1.8.0_301
+set              tool_home       /home/guangda.dong/tools/java/jdk1.8.0_301
 setenv           JAVA_HOME       $tool_home
 setenv           JAVA_BIN        $tool_home/bin
 setenv           JAVA_LIB        $tool_home/lib

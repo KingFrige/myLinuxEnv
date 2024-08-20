@@ -1,8 +1,0 @@
-#%Module -*- tcl -*-
-#
-# conflict        tmux
-
-set              tool_home       /home/korben/tools/tmux
-
-prepend-path     PATH            $tool_home/bin
-prepend-path     MANPATH         $tool_home/share/man

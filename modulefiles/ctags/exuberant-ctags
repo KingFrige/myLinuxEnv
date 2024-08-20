@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /home/korben/tools/ctags
+set             tool_home        /home/guangda.dong/tools/ctags
 
 prepend-path    PATH             $tool_home/bin
 prepend-path    MANPATH          $tool_home/share/man
