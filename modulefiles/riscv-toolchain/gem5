@@ -1,6 +1,8 @@
 #%Module -*- tcl -*-
 
-conflict        riscv_toolchain/freedomstudio-version
+conflict        riscv_toolchain/nuclei-gcc
+conflict        riscv_toolchain/nuclei-llvm
+conflict        riscv_toolchain/vector
 
 set             tool_home        /opt/tools/riscv-toolchain/gem5
 setenv          RISCV            $tool_home

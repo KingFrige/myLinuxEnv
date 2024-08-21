@@ -1,0 +1,5 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /opt/tools/ROCK-Kernel-Driver-rocm-5.7.1
+
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
