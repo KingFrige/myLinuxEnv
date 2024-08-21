@@ -1,7 +1,0 @@
-#%Module -*- tcl -*-
-
-set             tool_home       /home/guangda.dong/tools/Benchmarks/spec_cpu2006 
-
-setenv          SPEC_DIR        $tool_home
-
-cd $tool_home; source-sh bash shrc

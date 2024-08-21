@@ -1,0 +1,18 @@
+#%Module -*- tcl -*-
+
+conflict        gem5/v0.1.0
+conflict        gem5/v0.2.0
+conflict        gem5/v0.3.0
+conflict        gem5/v0.5.0
+conflict        gem5/v0.6.0
+conflict        gem5/v0.6.2
+conflict        gem5/v0.6.5
+
+set             tool_home            /opt/tools/gem5-release/v0.4.0
+set             tool_common          /opt/tools/gem5-release/common
+
+setenv          GEM5_RELEASE_PATH    $tool_home
+
+prepend-path    PATH                 $tool_home/bin
+prepend-path    PATH                 $tool_common
+

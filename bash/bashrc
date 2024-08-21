@@ -45,10 +45,6 @@ if [ -f ~/.bashrc_local ]; then
   source ~/.bashrc_local
 fi
 
-if [ -f ~guangda.dong/myLinuxEnv/bash/bashrc_modules ]; then
-  source ~guangda.dong/myLinuxEnv/bash/bashrc_modules
-fi
- 
 if [ -f ~guangda.dong/myLinuxEnv/bash/bashrc_aliases ]; then
   source ~guangda.dong/myLinuxEnv/bash/bashrc_aliases
 fi
