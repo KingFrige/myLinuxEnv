@@ -1,0 +1,37 @@
+#%Module -*- tcl -*-
+
+conflict        riscv_toolchain/nuclei-llvm
+conflict        riscv_toolchain/vector
+conflict        riscv_toolchain/gem5
+
+set             tool_home          /opt/tools/riscv-toolchain/nuclei-sdk-0.5.0/toolchain/nuclei_llvm18_0627
+set             riscv_openocd_home /opt/tools/riscv-toolchain/nuclei-sdk-0.5.0/toolchain/openocd
+set             qemu_home          /opt/tools/riscv-toolchain/nuclei-sdk-0.5.0/toolchain/qemu
+
+setenv          RISCV              $tool_home
+setenv          RISCV_PATH         $tool_home
+setenv          RISCV_OPENOCD_PATH $tool_home/lib/pkgconfig
+setenv          PKG_CONFIG_PATH    $tool_home/lib/pkgconfig
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/include
+prepend-path    MANPATH          $tool_home/share/man
+
+append-path     PKG_CONFIG_PATH  $::env(PATH)
+
+prepend-path    PATH             $riscv_openocd_home/bin
+prepend-path    LIBRARY_PATH     $riscv_openocd_home/lib
+prepend-path    LD_LIBRARY_PATH  $riscv_openocd_home/lib
+prepend-path    LD_INCLUDE_PATH  $riscv_openocd_home/include
+prepend-path    MANPATH          $riscv_openocd_home/share/man
+
+
+prepend-path    PATH               $qemu_home/bin
+prepend-path    LIBRARY_PATH       $qemu_home/lib
+prepend-path    LD_LIBRARY_PATH    $qemu_home/lib
+prepend-path    LD_INCLUDE_PATH    $qemu_home/include
+prepend-path    C_INCLUDE_PATH     $qemu_home/include
+prepend-path    CPLUS_INCLUDE_PATH $qemu_home/include
+prepend-path    MANPATH            $qemu_home/share/man
