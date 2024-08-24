@@ -1,0 +1,11 @@
+#%Module -*- tcl -*-
+
+set             tool_home        /opt/tools/openEDA/verilator/v5.002
+setenv          VERILATOR_ROOT   $tool_home
+
+prepend-path    PATH             $tool_home/bin
+prepend-path    LIBRARY_PATH     $tool_home/lib
+prepend-path    LD_LIBRARY_PATH  $tool_home/lib
+prepend-path    LD_INCLUDE_PATH  $tool_home/share/verilator/include
+prepend-path    MANPATH          $tool_home/share/man
+prepend-path    PKG_CONFIG_PATH  $tool_home/share/pkgconfig
