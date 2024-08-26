@@ -8,9 +8,9 @@ conflict        gem5/v0.5.0
 conflict        gem5/v0.6.0
 conflict        gem5/v0.6.2
 conflict        gem5/v0.6.5
-conflict        gem5/v0.8.0
+conflict        gem5/v0.7.0
 
-set             tool_home           /opt/tools/gem5-release/v0.7.0
+set             tool_home           /opt/tools/gem5-release/v0.8.0
 set             tool_common         /opt/tools/gem5-release/common
 
 setenv          GEM5_RELEASE_PATH   $tool_home

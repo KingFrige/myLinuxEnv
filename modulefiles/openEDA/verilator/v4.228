@@ -1,8 +1,8 @@
 #%Module -*- tcl -*-
 
-conflict        v4.228
+conflict        v5.002
 
-set             tool_home        /opt/tools/openEDA/verilator/v5.002
+set             tool_home        /opt/tools/openEDA/verilator/v4.228
 setenv          VERILATOR_ROOT   $tool_home
 
 prepend-path    PATH             $tool_home/bin
