@@ -2,6 +2,9 @@
 
 set              tool_home       /opt/tools/openmpi/v4.0.1
 
+setenv           MPICC           /opt/tools/openmpi/v4.0.1/bin/mpicc
+setenv           MPICXX          /opt/tools/openmpi/v4.0.1/bin/mpicxx
+
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib
 prepend-path     LD_LIBRARY_PATH $tool_home/lib
