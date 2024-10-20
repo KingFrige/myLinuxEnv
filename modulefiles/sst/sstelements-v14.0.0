@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set              tool_home       /opt/tools/sst/sstelement-v14.0.0
+set              tool_home       /opt/tools/sst/sstelements-v14.0.0
 
 prepend-path     PATH            $tool_home/bin
 prepend-path     LIBRARY_PATH    $tool_home/lib

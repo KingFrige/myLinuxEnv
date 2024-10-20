@@ -1,0 +1,13 @@
+#%Module -*- tcl -*-
+
+set              tool_home       /home/guangda.dong/tools/gcc/v9.3.0
+setenv           CC              $tool_home/bin/gcc
+setenv           CXX             $tool_home/bin/g++
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib64
+prepend-path     LD_LIBRARY_PATH $tool_home/lib64
+prepend-path     LD_INCLUDE_PATH $tool_home/include
+prepend-path     MANPATH         $tool_home/share/man
