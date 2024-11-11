@@ -52,4 +52,4 @@ fi
 ###  powerline
 # export TERM="screen-256color"
 
-export MAKEFLAGS="$MAKEFLAGS -j4" # Assuming you have N cores on your host system
+export MAKEFLAGS="$MAKEFLAGS -j128" # Assuming you have N cores on your host system
