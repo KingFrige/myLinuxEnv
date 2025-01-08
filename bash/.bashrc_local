@@ -26,3 +26,4 @@ source /home/korben/.rvm/environments/ruby-2.7.6
 TORQUE="/usr/local/torque"
 PATH="$TORQUE/bin:$TORQUE/sbin:${PATH}}"; export PATH;
 
+source ~/myLinuxEnv/bash/bashrc_ssh

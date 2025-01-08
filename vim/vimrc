@@ -113,6 +113,19 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
+" highlight extrawhite space with light blue background
+highlight ExtraWhitespace ctermbg=lightblue guibg=lightblue
+
+" stuff to prevent the light blue highlighting from showing up at the end of
+" lines when you're in insert mode. i.e., everytime you enter a space as you're
+" entering text the highlighting will kick in, which can be annoying. this will
+" make the highlighting only show up if you finish editing and leave some extra
+" whitespace
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$\|\t/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$\|\t\%#\@<!/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$\|\t/
+autocmd BufWinLeave * call clearmatches()
+
 "配色方案
 " colorscheme solarized
 colorscheme molokai
@@ -133,6 +146,7 @@ set tabstop=2
 set shiftwidth=2
 " 让 vim 把连续数量的空格视为一个制表符
 set softtabstop=2
+set tw=78 "max cols is 78
 
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
