@@ -1,0 +1,10 @@
+# ssh
+alias loginEDA1='ssh -X guangda.dong@10.11.60.18'
+alias loginGPU-Server='ssh guangda.dong@yz801.yizhu.local'
+alias openvpn.sh='~/scripts/openvpn.sh'
+alias loginyizhu-4090="ssh -X guangda.dong@10.10.70.86"
+alias loginyizhu-L4="ssh -X guangda.dong@10.10.70.12"
+alias loginyizhu-simulator='ssh -X guangda.dong@10.11.60.100'
+alias loginyizhu-arch-server01='ssh -X guangda.dong@10.11.60.37'
+alias loginyizhu-driver='ssh -X guangda.dong@10.12.70.52'
+alias loginyizhu-test='ssh -X guangda.dong@10.10.60.12'
