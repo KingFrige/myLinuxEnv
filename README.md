@@ -90,6 +90,13 @@
 * npm
 * [gulp](https://www.gulpjs.com.cn)
 
+```bash
+$ npm config set registry https://registry.npm.taobao.org
+$ npm config get registry
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+$ cnpm update
+```
+
 
 ## golang
 
@@ -107,3 +114,4 @@
 ## other
 * blender
 * yEd
+* [OpenGrk](https://github.com/oracle/opengrok)
