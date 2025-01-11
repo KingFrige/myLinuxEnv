@@ -1,0 +1,41 @@
+# 保存历史命令
+set history filename .gdbhistory
+set history save on
+ 
+# 记录执行gdb的过程
+set logging file .gdblog
+set logging enabled on
+ 
+# 退出时不显示提示信息
+set confirm off
+ 
+# 打印数组的索引下标
+set print array-indexes on
+ 
+# 每行打印一个结构体成员
+set print pretty on
+ 
+# 退出并保留断点
+define qbp
+save breakpoints .gdbbp
+quit
+end
+document qbp
+Exit and save the breakpoint
+end
+ 
+# 保留历史工作断点
+define sbp
+save breakpoints .gdbbp
+end
+document sbp
+Save the historical work breakpoint
+end
+ 
+# 加载历史工作断点
+define lbp
+source .gdbbp
+end
+document lbp
+Load the historical work breakpoint
+end
