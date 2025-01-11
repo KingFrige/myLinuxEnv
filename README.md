@@ -1,6 +1,7 @@
 # my Debian/Linux env
 
 ## [quick start](setup.md)
+
 * [install basic software](https://www.cnblogs.com/OneFri/p/8308340.html)
 * [modules use](https://www.cnblogs.com/OneFri/p/11723628.html)
 * [beautify desktop of debian/Linux](https://www.cnblogs.com/OneFri/p/6104037.html)
@@ -13,10 +14,12 @@
 
 
 ## bash config
+
 * [bash-it](https://github.com/Bash-it/bash-it)
 
 
 ## git config
+
 * bash自动补全
 * 分支提示
 * ssh上传gitee/github
@@ -28,18 +31,21 @@
 
 
 ## office software
+
 * zoom
 * slack
 * [wps](https://linux.wps.cn) 
 
 
 ## manual edit language/tool
+
 * [texlive](tug.org/texlive/)
 * [Sphinx](https://www.sphinx.org.cn)
 * [ReadtheDocs](https://docutils-zh-cn.readthedocs.io/zh_CN/latest/user/rst/demo.html#)
 
 
 ## 安装Scala/Chisel开发环境
+
 * jdk
 * maven
 * JetBrains-idea
@@ -49,15 +55,18 @@
 
 
 ## riscv工具链
+
 * toolchain
 
 
 ## wake/wit
+
 * wake
 * wit
 
 
 ## 开源EDA环境
+
 * iverilog
 * gtkwave
 * yosys
@@ -67,17 +76,25 @@
 
 
 ## IDE环境
+
 * freedomStudio
 * vscode
 * elipse
 
 
+## gdb
+
+1. [GDB dashboard](https://github.com/cyrus-and/gdb-dashboard?tab=readme-ov-file)
+
+
 ## python
+
 * python2.7
 * python3.7
 
 
 ## c compiler tool
+
 * [gcc](https://gcc.gnu.org/wiki/InstallingGCC)
 * llvm
 
@@ -85,6 +102,7 @@
 
 
 ## node
+
 * [nodejs](nodejs.cn)
 * npm
 * [gulp](https://www.gulpjs.com.cn)
@@ -101,16 +119,19 @@ $ cnpm update
 
 
 ## vpn tool
+
 * openvpn
 * etxlauncher
 
 
 ## virtual platform
+
 * virtualbox
 * qemu/kvm
 
 
 ## other
+
 * blender
 * yEd
 * [OpenGrk](https://github.com/oracle/opengrok)
