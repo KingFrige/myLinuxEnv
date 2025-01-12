@@ -84,7 +84,8 @@
 
 ## gdb
 
-1. [GDB dashboard](https://github.com/cyrus-and/gdb-dashboard?tab=readme-ov-file)
+1. [GDB dashboard](https://github.com/cyrus-and/gdb-dashboard)
+1. [100个gdb小技巧](https://www.cnblogs.com/LiuYanYGZ/p/14247052.html)
 
 
 ## python
