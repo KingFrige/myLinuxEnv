@@ -1,0 +1,14 @@
+#%Module -*- tcl -*-
+
+set              tool_home       /opt/tools/go/v1.23.5
+
+set              GOPATH          $::env(HOME)/go
+
+prepend-path     PATH            $tool_home/bin
+prepend-path     PATH            $GOPATH/bin
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+
+setenv           GOROOT          $tool_home
+setenv           GOPATH          $GOPATH
+setenv           GOPROXY         https://goproxy.io,direct
