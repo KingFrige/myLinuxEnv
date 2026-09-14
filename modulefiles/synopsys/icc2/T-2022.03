@@ -1,6 +1,6 @@
 #%Module -*- tcl -*-
 
-set             tool_home        /mnt/Software/EDA/Synopsys/icc2/T-2022.03
+set             tool_home        /mnt/Software/EDA/Synopsys/icc2/O-2018.06-SP1
 
 prepend-path    PATH             $tool_home/bin
 

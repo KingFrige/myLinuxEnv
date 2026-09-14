@@ -141,11 +141,11 @@ filetype indent on
 " 将制表符扩展为空格
 set expandtab
 " 设置编辑时制表符占用空格数
-set tabstop=2
+set tabstop=4
 " 设置格式化时制表符占用空格数
-set shiftwidth=2
+set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
-set softtabstop=2
+set softtabstop=4
 set tw=78 "max cols is 78
 
 " 定义快捷键的前缀，即<Leader>

@@ -1,3 +1,12 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+if [ -d "/home/korben/.local/share/bash-completion/completions" ]; then
+  for f in "/home/korben/.local/share/bash-completion/completions"/*; do
+    [ -f "$f" ] && . "$f"
+  done
+fi
+# OPENSPEC:END
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
   . /etc/bashrc
@@ -73,3 +82,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# opencode
+export PATH=/home/korben/.opencode/bin:$PATH
+
+export NVM_DIR="/home/korben/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

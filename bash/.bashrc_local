@@ -4,7 +4,10 @@ alias fff='/mnt/DownLoad/tools/firefox/firefox &'
 alias xmind='/opt/XMind/xmind'
 
 alias setSynopsysLicense2018='/mnt/Software/EDA/Synopsys/scl/2018.06/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/synopsys.dat -l /tmp/synopsys2018-debug.log'
+
+# good
 alias setSynopsysLicense2023ocad='/mnt/Software/EDA/Synopsys/scl/2023.09/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/Synopsys-ocad.dat -l /tmp/synopsys2023-debug.log'
+
 alias setSynopsysLicense2023ocad2='/mnt/Software/EDA/Synopsys/scl/2023.09/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/Synopsys-ocad2.dat -l /tmp/synopsys2023-debug.log'
 alias setSynopsysLicense2023ocad3='/mnt/Software/EDA/Synopsys/scl/2023.09/linux64/bin/lmgrd -c /mnt/Software/EDA/license/synopsys/Synopsys-ocad3.dat -l /tmp/synopsys2023-debug.log'
 
@@ -27,3 +30,25 @@ TORQUE="/usr/local/torque"
 PATH="$TORQUE/bin:$TORQUE/sbin:${PATH}}"; export PATH;
 
 source ~/myLinuxEnv/bash/bashrc_ssh
+
+export PIN_ROOT="/home/korben/tools/pin-3.31"
+export PATH=$PATH:"/home/korben/tools/pin-3.31"
+
+
+alias claudey='claude --dangerously-skip-permissions '
+
+export UV_INDEX_URL="https://pypi.tuna.tsinghua.edu.cn/simple"
+
+# AI
+# export GEMINI_API_KEY="AIzaSyBGDJ2IeLZ7lUh5QmJy_lelPX4CjAOO4DQ"
+CIMICRO_AI_KEY=sk-k2GBEO0si5BgiokYtZLkjQ
+
+export ANTHROPIC_BASE_URL="http://192.168.15.11"
+export ANTHROPIC_AUTH_TOKEN=${CIMICRO_AI_KEY}
+
+# export IFLOW_BASE_URL="http://192.168.15.11"
+# export IFLOW_API_KEY=sk-mhAb0KR8yoti94iuCb99Ba44Dd104fCfBfBfD2E62a51604a
+export IFLOW_BASE_URL="https://api.minimaxi.com/v1"
+export IFLOW_API_KEY=sk-cp-JgBzNGioUxjT1uA1nsG79kqGUh1olJ27iXMt97OV3ofwGHHtmzJiCLGWBpm72Bdbwq3UylpHnourHJLJmF-5WjuMDvhxfUdo8clTzy8JbeLxM8BdcBrVOJ4
+
+export ONEAPI_API_KEY=${CIMICRO_AI_KEY}

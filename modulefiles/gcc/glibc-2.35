@@ -1,0 +1,8 @@
+#%Module -*- tcl -*-
+
+set              tool_home       /home/korben/tools/gcc/glibc-2.35
+
+prepend-path     LIBRARY_PATH    $tool_home/lib
+prepend-path     LIBRARY_PATH    $tool_home/lib64
+prepend-path     LD_LIBRARY_PATH $tool_home/lib
+prepend-path     LD_LIBRARY_PATH $tool_home/lib64

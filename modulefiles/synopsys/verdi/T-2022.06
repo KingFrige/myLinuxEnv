@@ -1,7 +1,5 @@
 #%Module -*- tcl -*-
 
-conflict        synopsys/verdi/O-2018.09-SP2
-
 set             tool_home        /mnt/Software/EDA/Synopsys/verdi/T-2022.06
 
 setenv          NOVAS_HOME       ${tool_home}
